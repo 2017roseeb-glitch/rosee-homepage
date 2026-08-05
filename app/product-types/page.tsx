@@ -43,7 +43,7 @@ export default function ProductTypesPage() {
                       <img src={productThumbnail(product.slug)} alt={`${product.name} 제품 이미지`} />
                     </div>
                     <strong>{product.name}</strong>
-                    <span>{product.price === "문의" ? "소비자가 문의" : product.price}</span>
+                    <span>{product.price}</span>
                   </Link>
                 ))}
               </div>

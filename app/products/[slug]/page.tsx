@@ -36,7 +36,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
         <div className="product-detail-info">
           <span>{product.brandName}</span>
           <h1>{product.name}</h1>
-          <strong>{product.price === "문의" ? "소비자가 문의" : product.price}</strong>
+          <strong>{product.price}</strong>
           <p>{product.summary}</p>
           <p>{product.description}</p>
 

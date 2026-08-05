@@ -64,19 +64,23 @@ export const brandLines = brandDefinitions.map((brand) => ({
   products: products.filter((product) => product.brandId === brand.id),
 }));
 
+const brandOrder = new Map(brandDefinitions.map((brand, index) => [brand.id, index]));
+
 const productTypeDefinitions = [
   { id: "korean-skincare", name: "한방 스킨케어" },
   { id: "toner-lotion", name: "토너&로션" },
   { id: "cream-essence", name: "크림&에센스&앰플" },
   { id: "makeup", name: "메이크업" },
   { id: "sun-mask", name: "마스크/마사지/SUN" },
-  { id: "men", name: "남성제품" },
   { id: "cleansing", name: "클렌징" },
   { id: "hair-body", name: "헤어&바디" },
+  { id: "men", name: "남성제품" },
   { id: "fragrance", name: "향수&기타" },
 ];
 
 export const productTypes = productTypeDefinitions.map((type) => ({
   ...type,
-  products: products.filter((product) => product.typeId === type.id),
+  products: products
+    .filter((product) => product.typeId === type.id)
+    .sort((a, b) => (brandOrder.get(a.brandId) ?? 999) - (brandOrder.get(b.brandId) ?? 999)),
 }));

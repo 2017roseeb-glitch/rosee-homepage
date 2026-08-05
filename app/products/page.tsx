@@ -12,7 +12,7 @@ function isCreamProduct(name: string) {
 const menProductSection = {
   id: "men-products",
   name: "남성제품",
-  summary: "오퍼스 옴므와 로제 포맨을 중심으로 구성한 남성 스킨케어 제품군입니다.",
+  summary: "십장생 포맨, 오퍼스 옴므, 로제 포맨으로 구성한 남성 스킨케어 제품군입니다.",
   products: brandLines.flatMap((brand) => brand.products.filter((product) => product.typeId === "men")),
 };
 
@@ -23,8 +23,8 @@ const productSections = brandLines
   }))
   .filter((brand) => brand.products.length > 0)
   .flatMap((brand) => {
-    if (brand.id === "opus" && menProductSection.products.length > 0) {
-      return [brand, menProductSection];
+    if (brand.id === "misc-items" && menProductSection.products.length > 0) {
+      return [menProductSection, brand];
     }
 
     return [brand];
@@ -64,7 +64,7 @@ export default function ProductsPage() {
                       <img src={productThumbnail(product.slug)} alt={`${product.name} 제품 이미지`} />
                     </div>
                     <strong>{product.name}</strong>
-                    <span>{product.price === "문의" ? "소비자가 문의" : product.price}</span>
+                    <span>{product.price}</span>
                   </Link>
                 ))}
               </div>
