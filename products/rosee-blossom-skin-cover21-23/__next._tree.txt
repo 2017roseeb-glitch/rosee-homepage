@@ -1,6 +1,6 @@
-:HL["/_next/static/chunks/11v34guy3s-~a.css","style"]
-:HL["/_next/static/chunks/11p0zdo3y7.wu.css","style"]
-:HL["/_next/static/media/fca78c2ee6cec166-s.p.0kizb7t94.kuf.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/assets/company/rosee-wordmark.png","image"]
-:HL["/assets/products/rosee-blossom-skin-cover21-23.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"rosee-blossom-skin-cover21-23","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"IOcqBRGsV25esNIzKfe1v"}
+:HL["/rosee-homepage/_next/static/chunks/11v34guy3s-~a.css","style"]
+:HL["/rosee-homepage/_next/static/chunks/0n6-9g~1bo818.css","style"]
+:HL["/rosee-homepage/_next/static/media/fca78c2ee6cec166-s.p.0kizb7t94.kuf.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/rosee-homepage/assets/company/rosee-wordmark.png","image"]
+:HL["/rosee-homepage/assets/products/rosee-blossom-skin-cover21-23.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"rosee-blossom-skin-cover21-23","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"HRpkiiJ2-DCO8SJjgWjbz"}
