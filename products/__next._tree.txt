@@ -114,4 +114,4 @@
 :HL["/rosee-homepage/assets/product-thumbs/majarin-with-caviar-eye-cream.png","image"]
 :HL["/rosee-homepage/assets/product-thumbs/majarin-with-caviar-5pcs-set.png","image"]
 :HL["/rosee-homepage/assets/product-thumbs/majarin-with-caviar-foam-cleansing.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"HRpkiiJ2-DCO8SJjgWjbz"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"eyWyxX5hcTT91Iha0qN2J"}

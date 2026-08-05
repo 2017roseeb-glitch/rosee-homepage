@@ -9,8 +9,8 @@ type ProductDetailPageProps = {
 };
 
 const brandHomepageLinks: Record<string, string> = {
-  "sibjangsaeng": "http://sibjangsaeng.kr/",
-  "eco-aloe": "https://ecoaloe.co.kr/",
+  "sibjangsaeng": "https://www.sibjangsaeng.kr/",
+  "eco-aloe": "https://www.ecoaloe.co.kr/",
 };
 
 export function generateStaticParams() {

@@ -114,4 +114,4 @@
 :HL["/rosee-homepage/assets/product-thumbs/opus-5.png","image"]
 :HL["/rosee-homepage/assets/product-thumbs/eve-doctor-hair-shampoo.png","image"]
 :HL["/rosee-homepage/assets/product-thumbs/eve-doctor-hair.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"product-types","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"HRpkiiJ2-DCO8SJjgWjbz"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"product-types","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"eyWyxX5hcTT91Iha0qN2J"}

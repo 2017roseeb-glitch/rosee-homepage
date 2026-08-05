@@ -15,4 +15,4 @@
 :HL["/rosee-homepage/assets/company/cosmecca.png","image"]
 :HL["/rosee-homepage/assets/company/cosmax.png","image"]
 :HL["/rosee-homepage/assets/company/kolmar.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"about","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"HRpkiiJ2-DCO8SJjgWjbz"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"about","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"eyWyxX5hcTT91Iha0qN2J"}
