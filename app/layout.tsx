@@ -57,7 +57,6 @@ const menus = [
     items: [
       ["채용안내", "/recruit"],
       ["인재상", "/recruit#talent"],
-      ["인사제도", "/recruit#system"],
     ],
   },
 ];
@@ -82,7 +81,7 @@ export default function RootLayout({
         <main>{children}</main>
         <footer className="site-footer">
           <div>
-            <strong>로제화장품</strong>
+            <strong>로제화장품(주)</strong>
             <p>경기도 포천시 소흘읍 죽엽산로 385-89</p>
             <p>© Copyright (c) 2026 ROSEE Cosmetics All rights reserved.</p>
           </div>

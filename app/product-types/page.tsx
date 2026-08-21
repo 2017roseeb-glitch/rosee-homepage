@@ -1,5 +1,5 @@
 import { productTypes } from "../catalog-data";
-import Link from "next/link";
+import { ProductListLink, ProductScrollRestorer } from "../product-scroll-state";
 
 function productThumbnail(slug: string) {
   return `/assets/product-thumbs/${slug}.png`;
@@ -9,9 +9,14 @@ function isCreamProduct(name: string) {
   return name.includes("크림");
 }
 
+function isBidanmoProduct(slug: string) {
+  return slug.includes("bidanmo");
+}
+
 export default function ProductTypesPage() {
   return (
     <>
+      <ProductScrollRestorer />
       <section className="page-hero">
         <span className="eyebrow">Product Type</span>
         <h1>제품타입별</h1>
@@ -34,8 +39,8 @@ export default function ProductTypesPage() {
               </div>
               <div className="shop-product-grid">
                 {type.products.map((product) => (
-                  <Link
-                    className={`shop-product-card ${isCreamProduct(product.name) ? "is-cream-product" : "is-larger-product"}`}
+                  <ProductListLink
+                    className={`shop-product-card ${isCreamProduct(product.name) ? "is-cream-product" : "is-larger-product"} ${isBidanmoProduct(product.slug) ? "is-bidanmo-product" : ""}`}
                     href={`/products/${product.slug}`}
                     key={product.slug}
                   >
@@ -44,7 +49,7 @@ export default function ProductTypesPage() {
                     </div>
                     <strong>{product.name}</strong>
                     <span>{product.price}</span>
-                  </Link>
+                  </ProductListLink>
                 ))}
               </div>
             </section>

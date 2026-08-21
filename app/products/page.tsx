@@ -1,5 +1,5 @@
 import { brandLines } from "../catalog-data";
-import Link from "next/link";
+import { ProductListLink, ProductScrollRestorer } from "../product-scroll-state";
 
 function productThumbnail(slug: string) {
   return `/assets/product-thumbs/${slug}.png`;
@@ -7,6 +7,10 @@ function productThumbnail(slug: string) {
 
 function isCreamProduct(name: string) {
   return name.includes("크림");
+}
+
+function isBidanmoProduct(slug: string) {
+  return slug.includes("bidanmo");
 }
 
 const menProductSection = {
@@ -33,6 +37,7 @@ const productSections = brandLines
 export default function ProductsPage() {
   return (
     <>
+      <ProductScrollRestorer />
       <section className="page-hero">
         <span className="eyebrow">All Products</span>
         <h1>브랜드별 전제품</h1>
@@ -55,8 +60,8 @@ export default function ProductsPage() {
               </div>
               <div className="shop-product-grid">
                 {brand.products.map((product) => (
-                  <Link
-                    className={`shop-product-card ${isCreamProduct(product.name) ? "is-cream-product" : "is-larger-product"}`}
+                  <ProductListLink
+                    className={`shop-product-card ${isCreamProduct(product.name) ? "is-cream-product" : "is-larger-product"} ${isBidanmoProduct(product.slug) ? "is-bidanmo-product" : ""}`}
                     href={`/products/${product.slug}`}
                     key={product.slug}
                   >
@@ -65,7 +70,7 @@ export default function ProductsPage() {
                     </div>
                     <strong>{product.name}</strong>
                     <span>{product.price}</span>
-                  </Link>
+                  </ProductListLink>
                 ))}
               </div>
             </section>

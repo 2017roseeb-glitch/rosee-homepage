@@ -153,7 +153,7 @@ export const products = [
     "price": "42,000원",
     "image": "/assets/products/brand-homepage/sibjangsaeng-cheonjiyang-massage-cream.png",
     "summary": "천지향 마사지 크림은 한방 성분의 풍부한 영양을 담아 마사지하는 동안 피부 순환을 촉진시킵니다.",
-    "description": "천지향 마사지 크림은 한방 성분의 풍부한 영양을 담아 마사지하는 동안 피부 순환을 촉진시킵니다. 긴장된 피부를 이완시키고 광채 나는 탄력 피부로 가꾸어 줍니다.\n\n용량 및 구성: 250ml ㅣ 42,000원\n\n라인: Cheonjiyang Massage Cream"
+    "description": "110년근 산삼배양근이 피부 속부터 영양을 채워주어 피부 탄력 개선에 도움을 주는 마사지&필링 한방 마사지 크림입니다. 한방 발효성분이 피부에 자극 없이 마사지하는 동안 각질 제거와 영양 공급을 동시에 도와 촉촉한 피부로 가꾸어 줍니다.\n\n용량 및 구성: 250ml ㅣ 42,000원\n\n라인: Cheonjiyang Massage Cream"
   },
   {
     "slug": "sibjangsaeng-cheonjiyang-cleansing-cream",
@@ -199,7 +199,7 @@ export const products = [
     "typeName": "마스크/마사지/SUN",
     "name": "십장생 천지향 썬크림",
     "price": "40,000원",
-    "image": "/assets/products/brand-homepage/sibjangsaeng-cheonjiyang-sun-cream.png",
+    "image": "/assets/products/sibjangsaeng-cheonjiyang-sun-cream.jpg",
     "summary": "천지향 썬크림은 SPF50+ PA++++의 강력한 자외선 차단력과 함께 한방 보습 성분이 피부를 편안하게 케어합니다.",
     "description": "천지향 썬크림은 SPF50+ PA++++의 강력한 자외선 차단력과 함께 한방 보습 성분이 피부를 편안하게 케어합니다. 산뜻하게 밀착되며 자외선 차단과 스킨케어를 동시에 완성합니다.\n\n용량 및 구성: 80ml ㅣ 40,000원 ㅣ SPF50+ PA++++ / foam cleansing 50ml\n\n라인: Cheonjiyang Sun Cream"
   },
@@ -211,7 +211,7 @@ export const products = [
     "typeName": "메이크업",
     "name": "십장생 천지향 비비크림",
     "price": "45,000원",
-    "image": "/assets/products/brand-homepage/sibjangsaeng-cheonjiyang-bb-cream.png",
+    "image": "/assets/products/sibjangsaeng-cheonjiyang-bb-cream.jpg",
     "summary": "천지향 비비크림은 SPF50+ PA++++의 자외선 차단 기능과 자연스러운 피부 커버력을 동시에 제공합니다.",
     "description": "천지향 비비크림은 SPF50+ PA++++의 자외선 차단 기능과 자연스러운 피부 커버력을 동시에 제공합니다. 피부 톤을 균일하게 정돈하며 한방 성분이 피부를 편안하게 가꾸어 줍니다.\n\n용량 및 구성: 50ml ㅣ 45,000원 ㅣ SPF50+ PA++++ / BB cream 10ml\n\n라인: Cheonjiyang BB Cream"
   },
@@ -369,7 +369,7 @@ export const products = [
     "price": "220,000원",
     "image": "/assets/products/brand-homepage/sibjangsaeng-cheonsamjin-ampoule.png",
     "summary": "천삼진 초보양 앰플은 야생 산삼 배양 성분을 10개입으로 구성하여 집중 케어 기간 동안 매일 피부에 깊은 영양과 활력을 전달합니다.",
-    "description": "천삼진 초보양 앰플은 야생 산삼 배양 성분을 10개입으로 구성하여 집중 케어 기간 동안 매일 피부에 깊은 영양과 활력을 전달합니다. 피부 재생과 탄력 개선에 도움을 주는 스페셜 케어 앰플입니다.\n\n용량 및 구성: 10ml ㅣ 220,000원 ㅣ ampoule 10ml × 10EA\n\n라인: Cheonsamjin Vitalze Ampoule"
+    "description": "눈에 보이는 순금과 산삼배양근, 10가지 한방 성분을 함유한 미백 & 탄력 케어 앰플입니다. 지친 피부에 깊은 영양과 활력을 전달해 피부 재생과 탄력 개선에 도움을 줍니다.\n\n용량 및 구성: 10ml ㅣ 220,000원 ㅣ ampoule 10ml × 10EA\n\n라인: Cheonsamjin Vitalze Ampoule"
   },
   {
     "slug": "sibjangsaeng-yegyul-toner",
@@ -492,14 +492,38 @@ export const products = [
     "description": "아름다운 선 스킨커버는 십장생 복합체와 순금 성분이 피부 결점을 자연스럽게 커버하며 건강한 피부 톤을 완성합니다. 21호(회사한색), 23호(자분한색) 두 가지 컬러로 피부에 가볍게 밀착되어 산뜻하게 마무리해 줍니다.\n\n용량 및 구성: 13g ㅣ 55,000원 ㅣ SPF30 PA++ / refill 내장\n\n라인: Beautiful Line Skin Cover"
   },
   {
+    "slug": "sibjangsaeng-bidanmo-shampoo",
+    "brandId": "sibjangsaeng",
+    "brandName": "십장생",
+    "typeId": "hair-body",
+    "typeName": "헤어&바디",
+    "name": "십장생 비단모 샴푸",
+    "price": "18,000원",
+    "image": "/assets/products/sibjangsaeng-bidanmo-shampoo.png",
+    "summary": "대나무통 발효 십장생복합체와 한방 성분으로 두피와 모발을 산뜻하게 케어하는 헤어 샴푸입니다.",
+    "description": "대나무통 발효 십장생복합체와 귀한 한방 성분이 모발에 수분과 영양을 공급해 비단결 같은 머릿결로 가꾸어 주는 한방 발효 헤어 샴푸입니다. 홍삼추출물과 감초추출물이 두피와 모발을 편안하게 정돈하고, 케라틴 단백질이 손상된 모발을 부드럽게 감싸 윤기 있는 머릿결로 관리해 줍니다.\n\n용량 및 구성: 760ml"
+  },
+  {
+    "slug": "sibjangsaeng-bidanmo-conditioner",
+    "brandId": "sibjangsaeng",
+    "brandName": "십장생",
+    "typeId": "hair-body",
+    "typeName": "헤어&바디",
+    "name": "십장생 비단모 컨디셔너",
+    "price": "18,000원",
+    "image": "/assets/products/sibjangsaeng-bidanmo-conditioner.png",
+    "summary": "풍성한 모발 유지와 매끄러운 머릿결을 돕는 한방 발효 헤어 컨디셔너입니다.",
+    "description": "대나무통 발효 십장생복합체와 한방 성분이 샴푸 후 모발을 부드럽게 정돈해 비단결 같은 머릿결을 유지하도록 도와주는 한방 발효 헤어 컨디셔너입니다. 홍삼추출물과 감초추출물이 두피와 모발을 편안하게 케어하고, 케라틴 단백질이 모발 표면을 매끄럽게 감싸 윤기 있고 찰랑이는 머릿결로 가꾸어 줍니다.\n\n용량 및 구성: 760ml"
+  },
+  {
     "slug": "eco-aloe-shampoo-new",
     "brandId": "eco-aloe",
     "brandName": "에코알로에",
     "typeId": "hair-body",
     "typeName": "헤어&바디",
-    "name": "에코 알로에 헤어샴푸 NEW",
+    "name": "에코 알로에 헤어샴푸 RENEW",
     "price": "14,000원",
-    "image": "/assets/products/brand-homepage/eco-aloe-shampoo-new.png",
+    "image": "/assets/products/eco-aloe-shampoo-new.jpg",
     "summary": "기존 에코 알로에 헤어샴푸의 사용감을 이어가면서 750ml 용량으로 정리된 데일리 헤어 샴푸입니다.",
     "description": "기존 에코 알로에 헤어샴푸의 사용감을 이어가면서 750ml 용량으로 정리된 데일리 헤어 샴푸입니다.\n\n용량 및 구성: 750ml\n소비자가: 14,000원"
   },
@@ -509,9 +533,9 @@ export const products = [
     "brandName": "에코알로에",
     "typeId": "hair-body",
     "typeName": "헤어&바디",
-    "name": "에코 알로에 헤어 컨디셔너 NEW",
+    "name": "에코 알로에 컨디셔너 RENEW",
     "price": "14,000원",
-    "image": "/assets/products/brand-homepage/eco-aloe-conditioner-new.png",
+    "image": "/assets/products/eco-aloe-conditioner-new.jpg",
     "summary": "알로에 콘셉트의 촉촉한 사용감으로 샴푸 후 모발을 부드럽게 정돈해주는 750ml 컨디셔너입니다.",
     "description": "알로에 콘셉트의 촉촉한 사용감으로 샴푸 후 모발을 부드럽게 정돈해주는 750ml 컨디셔너입니다.\n\n용량 및 구성: 750ml\n소비자가: 14,000원"
   },
@@ -524,8 +548,8 @@ export const products = [
     "name": "에코 알로에 헤어샴푸",
     "price": "14,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-shampoo.png",
-    "summary": "유기농 알로에 15%와 나노 입자화 공법을 담아 두피를 마일드하게 세정하고 매일 쓰기 좋은 산뜻한 사용감을 전하는 대표 샴푸입니다.",
-    "description": "유기농 알로에 15%와 나노 입자화 공법을 담아 두피를 마일드하게 세정하고 매일 쓰기 좋은 산뜻한 사용감을 전하는 대표 샴푸입니다.\n\n용량 및 구성: 760ml\n소비자가: 14,000원"
+    "summary": "알로에 성분과 식물 유래 케어 성분을 담아 두피와 모발을 산뜻하게 세정하는 데일리 샴푸입니다.",
+    "description": "알로에 성분과 식물 유래 케어 성분이 두피와 모발을 부드럽게 감싸며 노폐물을 산뜻하게 씻어내는 데일리 샴푸입니다. 풍성한 거품이 모발을 깨끗하게 정돈하고 세정 후에도 편안한 사용감을 전합니다.\n\n용량 및 구성: 760ml\n소비자가: 14,000원"
   },
   {
     "slug": "eco-black-garlic-shampoo",
@@ -572,8 +596,8 @@ export const products = [
     "name": "에코 알로에 헤어 컨디셔너",
     "price": "14,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-conditioner.png",
-    "summary": "에코 알로에 헤어 컨디셔너은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 헤어 컨디셔너은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 760ml\n소비자가: 14,000원"
+    "summary": "샴푸 후 모발을 부드럽게 정돈하고 촉촉한 윤기를 더해주는 알로에 콘셉트 컨디셔너입니다.",
+    "description": "알로에 성분과 식물 유래 케어 성분이 샴푸 후 거칠어진 모발을 부드럽게 감싸며 촉촉하게 정돈해주는 컨디셔너입니다. 엉킴을 줄이고 매끄러운 손상 모발 케어를 도와 데일리 헤어 루틴에 편안하게 사용할 수 있습니다.\n\n용량 및 구성: 760ml\n소비자가: 14,000원"
   },
   {
     "slug": "eco-aloe-treatment",
@@ -584,8 +608,8 @@ export const products = [
     "name": "에코 알로에 헤어 트리트먼트",
     "price": "14,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-treatment.png",
-    "summary": "에코 알로에 헤어 트리트먼트은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 헤어 트리트먼트은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 760ml\n소비자가: 14,000원"
+    "summary": "건조하고 푸석한 모발에 수분감과 부드러움을 더해주는 알로에 콘셉트 헤어 트리트먼트입니다.",
+    "description": "알로에 성분과 식물 유래 케어 성분이 건조하고 푸석한 모발에 수분감과 영양감을 전해주는 헤어 트리트먼트입니다. 샴푸 후 모발을 집중적으로 감싸 매끄럽고 차분한 머릿결로 관리할 수 있습니다.\n\n용량 및 구성: 760ml\n소비자가: 14,000원"
   },
   {
     "slug": "eco-aloe-hair-gel",
@@ -596,8 +620,8 @@ export const products = [
     "name": "에코 알로에 헤어젤",
     "price": "13,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-hair-gel.png",
-    "summary": "에코 알로에 헤어젤은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 헤어젤은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 530ml\n소비자가: 13,000원"
+    "summary": "알로에 성분을 담아 산뜻하게 스타일을 잡아주는 데일리 헤어젤입니다.",
+    "description": "알로에 성분을 담은 산뜻한 사용감의 헤어젤로 원하는 헤어 스타일을 깔끔하게 고정해줍니다. 끈적임 부담을 줄인 마무리감으로 일상적인 스타일링에 편하게 사용할 수 있습니다.\n\n용량 및 구성: 530ml\n소비자가: 13,000원"
   },
   {
     "slug": "eco-aloe-multi-essence",
@@ -608,8 +632,8 @@ export const products = [
     "name": "에코 알로에 헤어 멀티에센스",
     "price": "16,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-multi-essence.png",
-    "summary": "에코 알로에 헤어 멀티에센스은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 헤어 멀티에센스은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 530ml\n소비자가: 16,000원"
+    "summary": "모발에 수분감과 윤기를 더해 차분하게 정돈해주는 알로에 콘셉트 헤어 멀티에센스입니다.",
+    "description": "알로에 성분과 식물 유래 케어 성분이 건조한 모발에 촉촉한 보습감을 더하고 부스스함을 차분하게 정돈해주는 헤어 멀티에센스입니다. 드라이 전후 데일리 케어로 사용하기 좋으며 모발을 부드럽고 윤기 있게 가꾸어 줍니다.\n\n용량 및 구성: 530ml\n소비자가: 16,000원"
   },
   {
     "slug": "eco-aloe-hair-spray",
@@ -620,8 +644,8 @@ export const products = [
     "name": "에코 알로에 헤어 스프레이",
     "price": "8,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-hair-spray.png",
-    "summary": "에코 알로에 헤어 스프레이은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 헤어 스프레이은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 300ml\n소비자가: 8,000원"
+    "summary": "완성한 헤어 스타일을 가볍고 깔끔하게 고정해주는 알로에 콘셉트 헤어 스프레이입니다.",
+    "description": "스타일링 후 모발을 가볍게 잡아주어 자연스러운 형태를 오래 유지하도록 돕는 헤어 스프레이입니다. 알로에 성분을 담아 뻣뻣함 부담을 줄이고 깔끔한 마무리감을 전합니다.\n\n용량 및 구성: 300ml\n소비자가: 8,000원"
   },
   {
     "slug": "eco-aloe-coating-essence",
@@ -632,8 +656,8 @@ export const products = [
     "name": "에코 알로에 헤어 코팅 에센스",
     "price": "17,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-coating-essence.png",
-    "summary": "에코 알로에 헤어 코팅 에센스은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 헤어 코팅 에센스은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 200ml\n소비자가: 17,000원"
+    "summary": "손상되고 거칠어진 모발 표면을 매끄럽게 감싸 윤기 있게 정돈해주는 헤어 코팅 에센스입니다.",
+    "description": "알로에 성분과 식물 유래 케어 성분이 모발 표면을 부드럽게 감싸 거칠어진 머릿결을 매끄럽게 정돈해주는 헤어 코팅 에센스입니다. 푸석함을 줄이고 윤기 있는 헤어 스타일을 완성하는 데 도움을 줍니다.\n\n용량 및 구성: 200ml\n소비자가: 17,000원"
   },
   {
     "slug": "eco-aloe-strong-mist",
@@ -644,8 +668,8 @@ export const products = [
     "name": "에코 알로에 초강력 헤어미스트",
     "price": "10,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-strong-mist.png",
-    "summary": "에코 알로에 초강력 헤어미스트은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 초강력 헤어미스트은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 250ml\n소비자가: 10,000원"
+    "summary": "강한 고정력이 필요한 스타일을 빠르게 잡아주는 알로에 콘셉트 헤어 미스트입니다.",
+    "description": "완성한 헤어 스타일을 빠르게 고정하고 흐트러짐을 줄여주는 초강력 헤어 미스트입니다. 알로에 성분을 담은 산뜻한 사용감으로 볼륨감 있는 스타일이나 정교한 연출을 깔끔하게 마무리할 수 있습니다.\n\n용량 및 구성: 250ml\n소비자가: 10,000원"
   },
   {
     "slug": "eco-aloe-argan-hair-oil",
@@ -656,8 +680,8 @@ export const products = [
     "name": "에코 알로에 아르간 헤어오일",
     "price": "21,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-argan-hair-oil.png",
-    "summary": "에코 알로에 아르간 헤어오일은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 아르간 헤어오일은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 200ml\n소비자가: 21,000원"
+    "summary": "아르간 오일과 알로에 성분이 푸석한 모발에 윤기와 부드러움을 더해주는 헤어 오일입니다.",
+    "description": "아르간 오일과 알로에 성분이 건조하고 푸석한 모발에 윤기와 부드러움을 더해주는 헤어 오일입니다. 무거운 느낌을 줄이고 모발 끝까지 매끄럽게 정돈해 자연스러운 광택 케어를 도와줍니다.\n\n용량 및 구성: 200ml\n소비자가: 21,000원"
   },
   {
     "slug": "eco-aloe-gray-cover-color",
@@ -668,8 +692,8 @@ export const products = [
     "name": "에코 알로에 헤어 칼라크림 새치용",
     "price": "11,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-gray-cover-color.png",
-    "summary": "에코 알로에 헤어 칼라크림 새치용은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 헤어 칼라크림 새치용은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 60ml\n소비자가: 11,000원"
+    "summary": "새치 커버를 위한 크림 타입 헤어 컬러 제품으로 자연스러운 색상 연출을 도와줍니다.",
+    "description": "새치 커버를 위해 사용하는 크림 타입 헤어 컬러 제품입니다. 알로에 성분과 식물 유래 케어 성분을 담아 컬러링 중에도 모발을 부드럽게 감싸며 자연스럽고 깔끔한 색상 표현을 도와줍니다.\n\n용량 및 구성: 60ml\n소비자가: 11,000원"
   },
   {
     "slug": "eco-aloe-fashion-color",
@@ -680,8 +704,8 @@ export const products = [
     "name": "에코 알로에 헤어칼라 크림 멋내기용",
     "price": "11,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-fashion-color.png",
-    "summary": "에코 알로에 헤어칼라 크림 멋내기용은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 헤어칼라 크림 멋내기용은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 60ml\n소비자가: 11,000원"
+    "summary": "원하는 분위기에 맞춰 헤어 컬러를 연출할 수 있는 크림 타입 멋내기용 컬러 제품입니다.",
+    "description": "멋내기 컬러 연출을 위한 크림 타입 헤어 컬러 제품입니다. 알로에 성분과 식물 유래 케어 성분을 담아 모발을 부드럽게 감싸며 선명하고 자연스러운 색상 표현을 도와줍니다.\n\n용량 및 구성: 60ml\n소비자가: 11,000원"
   },
   {
     "slug": "eco-aloe-curling-essence",
@@ -692,8 +716,8 @@ export const products = [
     "name": "에코 알로에 헤어 컬링 에센스",
     "price": "10,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-curling-essence.png",
-    "summary": "에코 알로에 헤어 컬링 에센스은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 헤어 컬링 에센스은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 150ml\n소비자가: 10,000원"
+    "summary": "웨이브와 컬을 탄력 있게 살리고 모발을 촉촉하게 정돈해주는 헤어 컬링 에센스입니다.",
+    "description": "웨이브와 컬의 형태를 자연스럽게 살려주면서 모발에 촉촉한 사용감을 더하는 헤어 컬링 에센스입니다. 알로에 성분과 식물 유래 케어 성분이 부스스함을 줄이고 탄력 있는 스타일링을 도와줍니다.\n\n용량 및 구성: 150ml\n소비자가: 10,000원"
   },
   {
     "slug": "eco-aloe-body-cleanser",
@@ -704,8 +728,8 @@ export const products = [
     "name": "에코 알로에 바디 클렌저",
     "price": "16,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-body-cleanser.png",
-    "summary": "에코 알로에 바디 클렌저은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 바디 클렌저은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 750ml\n소비자가: 16,000원"
+    "summary": "알로에 성분을 담아 피부 노폐물을 부드럽게 씻어내는 촉촉한 바디 클렌저입니다.",
+    "description": "알로에 성분과 식물 유래 세정 성분이 피부 노폐물을 부드럽게 씻어내고 샤워 후에도 편안한 촉촉함을 남겨주는 바디 클렌저입니다. 매일 사용하기 좋은 산뜻한 거품과 깨끗한 마무리감을 전합니다.\n\n용량 및 구성: 750ml\n소비자가: 16,000원"
   },
   {
     "slug": "eco-aloe-body-essence",
@@ -716,8 +740,8 @@ export const products = [
     "name": "에코 알로에 바디 에센스",
     "price": "16,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-body-essence.png",
-    "summary": "에코 알로에 바디 에센스은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 바디 에센스은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 500ml\n소비자가: 16,000원"
+    "summary": "샤워 후 건조한 바디 피부에 수분감과 부드러움을 더해주는 알로에 콘셉트 바디 에센스입니다.",
+    "description": "알로에 성분과 식물 유래 보습 성분이 건조한 바디 피부를 촉촉하게 감싸며 매끄러운 피부결로 가꾸어주는 바디 에센스입니다. 끈적임 부담을 줄인 산뜻한 사용감으로 데일리 보습 케어에 적합합니다.\n\n용량 및 구성: 500ml\n소비자가: 16,000원"
   },
   {
     "slug": "eco-rose-body-cleanser",
@@ -728,8 +752,8 @@ export const products = [
     "name": "에코 로즈 바디 클렌저",
     "price": "16,000원",
     "image": "/assets/products/brand-homepage/eco-rose-body-cleanser.png",
-    "summary": "에코 로즈 바디 클렌저은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 로즈 바디 클렌저은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 760ml\n소비자가: 16,000원"
+    "summary": "장미 유래 보습 성분과 부드러운 거품으로 피부를 산뜻하게 씻어내는 바디 클렌저입니다.",
+    "description": "장미 유래 보습 성분과 식물 유래 세정 성분이 피부 노폐물을 부드럽게 씻어내고 은은하고 산뜻한 샤워감을 전하는 바디 클렌저입니다. 풍성한 거품이 피부를 편안하게 감싸며 촉촉한 마무리감을 남겨줍니다.\n\n용량 및 구성: 760ml\n소비자가: 16,000원"
   },
   {
     "slug": "eco-rose-body-essence",
@@ -740,8 +764,8 @@ export const products = [
     "name": "에코 로즈 바디 에센스",
     "price": "16,000원",
     "image": "/assets/products/brand-homepage/eco-rose-body-essence.png",
-    "summary": "에코 로즈 바디 에센스은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 로즈 바디 에센스은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 530ml\n소비자가: 16,000원"
+    "summary": "장미 유래 보습 성분이 건조한 바디 피부를 촉촉하고 매끄럽게 가꾸어주는 바디 에센스입니다.",
+    "description": "장미 유래 보습 성분과 식물 유래 케어 성분이 샤워 후 건조해진 바디 피부에 촉촉함을 더해주는 바디 에센스입니다. 부드럽게 펴 발리며 끈적임 부담 없이 매끄러운 피부결로 정돈해줍니다.\n\n용량 및 구성: 530ml\n소비자가: 16,000원"
   },
   {
     "slug": "eco-lime-mint-body-set",
@@ -752,8 +776,8 @@ export const products = [
     "name": "에코 라임민트 바디 2종세트",
     "price": "38,000원",
     "image": "/assets/products/brand-homepage/eco-lime-mint-body-set.png",
-    "summary": "에코 라임민트 바디 2종세트은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 라임민트 바디 2종세트은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 세트구성\n소비자가: 38,000원"
+    "summary": "라임과 민트의 산뜻한 이미지를 담아 클렌징과 보습을 함께 구성한 바디 케어 2종 세트입니다.",
+    "description": "상쾌한 라임과 민트의 이미지를 담아 바디 클렌징과 보습 케어를 함께 제안하는 바디 2종 세트입니다. 샤워 단계부터 마무리 보습까지 산뜻하고 깨끗한 데일리 바디 케어 루틴을 완성해줍니다.\n\n용량 및 구성: 세트구성\n소비자가: 38,000원"
   },
   {
     "slug": "eco-aloe-moisture-cleansing-foam",
@@ -764,8 +788,8 @@ export const products = [
     "name": "에코 알로에 모이스처 클렌징폼",
     "price": "15,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-moisture-cleansing-foam.jpg",
-    "summary": "에코 알로에 모이스처 클렌징폼은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.",
-    "description": "에코 알로에 모이스처 클렌징폼은 에코알로에 브랜드 홈페이지 자료를 기준으로 등록한 데일리 케어 제품입니다.\n\n용량 및 구성: 200ml\n소비자가: 15,000원"
+    "summary": "알로에 성분을 담은 촉촉한 거품이 피부 노폐물을 부드럽게 씻어내는 클렌징폼입니다.",
+    "description": "알로에 성분과 식물 유래 세정 성분을 담은 촉촉한 클렌징폼입니다. 부드러운 거품이 피부 노폐물과 메이크업 잔여물을 산뜻하게 씻어내고 세안 후에도 편안한 피부 컨디션을 유지하도록 도와줍니다.\n\n용량 및 구성: 200ml\n소비자가: 15,000원"
   },
   {
     "slug": "majarin-sunblock",
@@ -777,7 +801,7 @@ export const products = [
     "price": "22,000원",
     "image": "/assets/products/majarin-sunblock.png",
     "summary": "마자린의 마스크/마사지/SUN 카테고리 제품입니다.",
-    "description": "마자린 마린콜라겐 선블럭은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 마자린 라인의 마스크/마사지/SUN 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 22,000원입니다."
+    "description": "촉촉하고 매끈한 발림성으로 스킨케어까지 가능한 마자린 마린콜라겐 선블럭입니다. 바다 속 에너지를 담은 해양 성분이 피부를 편안하게 보호하고 산뜻한 마무리감을 선사합니다.\n\n용량 및 구성: 100ml ㅣ SPF50+ PA+++"
   },
   {
     "slug": "majarin-2",
@@ -789,7 +813,7 @@ export const products = [
     "price": "44,000원",
     "image": "/assets/products/majarin-2.png",
     "summary": "마자린의 크림&에센스&앰플 카테고리 제품입니다.",
-    "description": "마자린 마린콜라겐 플러스 2종세트은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 마자린 라인의 크림&에센스&앰플 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 44,000원입니다."
+    "description": "마린 콜라겐과 해양 보습 성분을 담아 피부 수분 밸런스를 정돈하고 촉촉한 피부 컨디션을 만들어주는 마자린 마린콜라겐 플러스 2종 세트입니다.\n\n용량 및 구성: 스킨 + 에멀전"
   },
   {
     "slug": "majarin-3",
@@ -801,7 +825,7 @@ export const products = [
     "price": "44,000원",
     "image": "/assets/products/majarin-3.png",
     "summary": "마자린의 크림&에센스&앰플 카테고리 제품입니다.",
-    "description": "마자린 마린콜라겐 플러스 3종세트은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 마자린 라인의 크림&에센스&앰플 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 44,000원입니다."
+    "description": "마린 콜라겐과 해양 보습 성분을 담아 피부 수분 밸런스를 정돈하고 촉촉한 피부 컨디션을 단계별로 관리해주는 마자린 마린콜라겐 플러스 3종 세트입니다.\n\n용량 및 구성: 스킨 + 에멀전 + 크림"
   },
   {
     "slug": "majarin",
@@ -813,7 +837,7 @@ export const products = [
     "price": "22,000원",
     "image": "/assets/products/majarin.png",
     "summary": "마자린의 토너&로션 카테고리 제품입니다.",
-    "description": "마자린 마린콜라겐 플러스 스킨은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 마자린 라인의 토너&로션 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 22,000원입니다."
+    "description": "피부의 수분 밸런스를 맞춰 맑고 생기 있는 피부 컨디션으로 끌어올려 주는 마자린 마린콜라겐 플러스 스킨입니다.\n\n용량 및 구성: 120ml"
   },
   {
     "slug": "majarin-4",
@@ -825,7 +849,7 @@ export const products = [
     "price": "22,000원",
     "image": "/assets/products/majarin-4.png",
     "summary": "마자린의 토너&로션 카테고리 제품입니다.",
-    "description": "마자린 마린콜라겐 플러스 에멀전은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 마자린 라인의 토너&로션 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 22,000원입니다."
+    "description": "유수분 밸런스를 편안하게 맞춰 건조한 피부를 촉촉하고 매끈하게 가꾸어 주는 마자린 마린콜라겐 플러스 에멀전입니다.\n\n용량 및 구성: 120ml"
   },
   {
     "slug": "majarin-essence",
@@ -837,7 +861,7 @@ export const products = [
     "price": "25,000원",
     "image": "/assets/products/majarin-essence.png",
     "summary": "마자린의 크림&에센스&앰플 카테고리 제품입니다.",
-    "description": "마자린 마린콜라겐 플러스 에센스은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 마자린 라인의 크림&에센스&앰플 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 25,000원입니다."
+    "description": "마린 콜라겐과 해양 보습 성분이 피부에 수분 에너지를 공급해 생기 있고 탄탄한 피부결로 가꾸어 주는 에센스입니다.\n\n용량 및 구성: 50ml"
   },
   {
     "slug": "majarin-cream",
@@ -849,7 +873,7 @@ export const products = [
     "price": "25,000원",
     "image": "/assets/products/majarin-cream.png",
     "summary": "마자린의 크림&에센스&앰플 카테고리 제품입니다.",
-    "description": "마자린 마린콜라겐 플러스 크림은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 마자린 라인의 크림&에센스&앰플 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 25,000원입니다."
+    "description": "피부의 수분 저장 능력을 활성화시키고 수분 보호막을 형성하여 건조의 악순환을 차단해 주는 고수분 크림입니다.\n\n용량 및 구성: 100ml"
   },
   {
     "slug": "majarin-cream-2",
@@ -861,19 +885,7 @@ export const products = [
     "price": "25,000원",
     "image": "/assets/products/majarin-cream-2.jpg",
     "summary": "마자린의 크림&에센스&앰플 카테고리 제품입니다.",
-    "description": "마자린 스네일 수분크림은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 마자린 라인의 크림&에센스&앰플 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 25,000원입니다."
-  },
-  {
-    "slug": "majarin-cleansing",
-    "brandId": "majarin",
-    "brandName": "마자린",
-    "typeId": "cleansing",
-    "typeName": "클렌징",
-    "name": "마자린 캐비어 클렌징폼",
-    "price": "12,000원",
-    "image": "/assets/products/majarin-cleansing.png",
-    "summary": "마자린의 클렌징 카테고리 제품입니다.",
-    "description": "마자린 캐비어 클렌징폼은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 마자린 라인의 클렌징 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 12,000원입니다."
+    "description": "건조한 피부에 풍부한 수분감을 더해 촉촉한 보호막을 형성하고 피부결을 부드럽게 정돈해주는 스네일 수분크림입니다.\n\n용량 및 구성: 100ml"
   },
   {
     "slug": "majarin-spf30pa",
@@ -885,7 +897,7 @@ export const products = [
     "price": "19,000원",
     "image": "/assets/products/majarin-spf30pa.png",
     "summary": "마자린의 메이크업 카테고리 제품입니다.",
-    "description": "마자린 콜라겐 비비spf30pa+은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 마자린 라인의 메이크업 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 19,000원입니다."
+    "description": "수분 보충, 환한 피부, 탄력 보강의 세 가지 피부 고민을 함께 케어하는 마자린 마린 콜라겐 비비크림입니다. 바다 속 에너지를 담은 해양 성분이 건조함을 덜어주고 우수한 밀착력으로 잡티를 자연스럽게 커버해 윤기 있는 수분 메이크업을 완성합니다.\n\n용량 및 구성: 50ml ㅣ SPF30 PA++"
   },
   {
     "slug": "majarin-with-caviar-skin-softener",
@@ -897,7 +909,7 @@ export const products = [
     "price": "42,000원",
     "image": "/assets/products/majarin-with-caviar-skin-softener.png",
     "summary": "마자린 위드 캐비어 모이스춰 라인의 스킨 소프너입니다.",
-    "description": "캐비어 추출물과 스쿠알란이 건조한 피부에 에너지를 공급하는 마자린 위드 캐비어 모이스춰 라인의 스킨 소프너입니다. 용량은 130ml이며 소비자가 기준가는 42,000원입니다."
+    "description": "캐비어 추출물과 스쿠알란을 함유해 건조한 피부에 수분 에너지를 공급하는 고보습 에센셜 스킨입니다.\n\n용량 및 구성: 130ml"
   },
   {
     "slug": "majarin-with-caviar-emulsion",
@@ -909,7 +921,7 @@ export const products = [
     "price": "42,000원",
     "image": "/assets/products/majarin-with-caviar-emulsion.png",
     "summary": "마자린 위드 캐비어 모이스춰 라인의 에멀전입니다.",
-    "description": "캐비어 추출물과 스쿠알란이 건조한 피부에 에너지를 공급하는 마자린 위드 캐비어 모이스춰 라인의 에멀전입니다. 용량은 130ml이며 소비자가 기준가는 42,000원입니다."
+    "description": "외부 스트레스와 피로로 거칠고 건조해진 피부를 촉촉하고 부드럽게 가꾸어 주는 보습 유액입니다.\n\n용량 및 구성: 130ml"
   },
   {
     "slug": "majarin-with-caviar-essence",
@@ -921,7 +933,7 @@ export const products = [
     "price": "45,000원",
     "image": "/assets/products/majarin-with-caviar-essence.png",
     "summary": "마자린 위드 캐비어 모이스춰 라인의 에센스입니다.",
-    "description": "캐비어 추출물과 스쿠알란이 건조한 피부에 에너지를 공급하는 마자린 위드 캐비어 모이스춰 라인의 에센스입니다. 용량은 50ml이며 소비자가 기준가는 45,000원입니다."
+    "description": "캐비어 추출물과 스쿠알란을 담아 피부에 영양을 공급하고 수분 보호막 형성을 도와주는 모이스춰 에센스입니다.\n\n용량 및 구성: 50ml"
   },
   {
     "slug": "majarin-with-caviar-cream",
@@ -933,7 +945,7 @@ export const products = [
     "price": "45,000원",
     "image": "/assets/products/majarin-with-caviar-cream.png",
     "summary": "마자린 위드 캐비어 모이스춰 라인의 크림입니다.",
-    "description": "캐비어 추출물과 스쿠알란이 건조한 피부에 에너지를 공급하는 마자린 위드 캐비어 모이스춰 라인의 크림입니다. 용량은 60ml이며 소비자가 기준가는 45,000원입니다."
+    "description": "해조 추출물과 캐비어 추출물이 건조함을 케어해 윤기 있는 피부로 가꾸어 주는 모이스춰 크림입니다.\n\n용량 및 구성: 60ml"
   },
   {
     "slug": "majarin-with-caviar-eye-cream",
@@ -945,7 +957,7 @@ export const products = [
     "price": "45,000원",
     "image": "/assets/products/majarin-with-caviar-eye-cream.png",
     "summary": "마자린 위드 캐비어 모이스춰 라인의 아이크림입니다.",
-    "description": "캐비어 추출물과 스쿠알란이 건조한 피부에 에너지를 공급하는 마자린 위드 캐비어 모이스춰 라인의 아이크림입니다. 용량은 40ml이며 소비자가 기준가는 45,000원입니다."
+    "description": "눈가 탄력과 주름 개선을 도와주는 고영양 아이크림입니다. 캐비어 추출물과 스쿠알란이 건조하고 민감해지기 쉬운 눈가 피부를 촉촉하게 보호합니다.\n\n용량 및 구성: 40ml"
   },
   {
     "slug": "majarin-with-caviar-5pcs-set",
@@ -957,7 +969,7 @@ export const products = [
     "price": "219,000원",
     "image": "/assets/products/majarin-with-caviar-5pcs-set.png",
     "summary": "마자린 위드 캐비어 모이스춰 라인의 5종 세트입니다.",
-    "description": "스킨, 에멀전 130ml와 에센스 50ml, 크림 60ml, 아이크림 40ml로 구성된 마자린 위드 캐비어 모이스춰 5종 세트입니다. 소비자가 기준가는 219,000원입니다."
+    "description": "비타민과 단백질이 풍부한 캐비어 추출물과 스쿠알란을 함유해 생기를 잃은 피부에 부족한 수분 에너지를 공급하는 마자린 위드 캐비어 5종 세트입니다.\n\n용량 및 구성: 스킨 130ml + 에멀전 130ml + 에센스 50ml + 크림 60ml + 아이크림 40ml"
   },
   {
     "slug": "majarin-with-caviar-foam-cleansing",
@@ -966,10 +978,10 @@ export const products = [
     "typeId": "cleansing",
     "typeName": "클렌징",
     "name": "마자린 위드 캐비어 모이스춰 폼 클렌징",
-    "price": "11,000원",
-    "image": "/assets/products/majarin-with-caviar-foam-cleansing.png",
+    "price": "12,000원",
+    "image": "/assets/products/majarin-with-caviar-foam-cleansing.jpg",
     "summary": "마자린 위드 캐비어 모이스춰 라인의 폼 클렌징입니다.",
-    "description": "캐비어 추출물과 스쿠알란을 담은 마자린 위드 캐비어 모이스춰 라인의 폼 클렌징입니다. 용량은 200ml이며 소비자가 기준가는 11,000원입니다."
+    "description": "캐비어 성분과 식물 성분을 담은 미세하고 촘촘한 거품이 세안 후에도 피부를 매끈하고 촉촉하게 가꾸어 주는 모이스춰 폼 클렌징입니다.\n\n용량 및 구성: 200ml"
   },
   {
     "slug": "opus-2-2",
@@ -979,9 +991,9 @@ export const products = [
     "typeName": "크림&에센스&앰플",
     "name": "오퍼스 로맨틱 루비어스 2종세트",
     "price": "56,000원",
-    "image": "/assets/products/opus-2-2.png",
+    "image": "/assets/products/opus-2-2.jpg",
     "summary": "오퍼스의 크림&에센스&앰플 카테고리 제품입니다.",
-    "description": "오퍼스 로맨틱 루비어스 2종세트은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 오퍼스 라인의 크림&에센스&앰플 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 56,000원입니다."
+    "description": "오퍼스 로맨틱 루비어스 2종세트는 발효석류와 콜라겐 콘셉트의 스킨과 에멀젼으로 구성한 기초 스킨케어 세트입니다. 세안 후 피부결을 촉촉하게 정돈하고 유수분 밸런스를 맞춰 매끈한 피부로 가꾸어 줍니다.\n\n용량 및 구성: 스킨 150ml + 에멀전 150ml"
   },
   {
     "slug": "opus",
@@ -993,7 +1005,7 @@ export const products = [
     "price": "28,000원",
     "image": "/assets/products/opus.png",
     "summary": "오퍼스의 토너&로션 카테고리 제품입니다.",
-    "description": "오퍼스 로맨틱 루비어스 스킨은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 오퍼스 라인의 토너&로션 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 28,000원입니다."
+    "description": "발효석류와 콜라겐 콘셉트로 세안 후 피부결을 정돈하고 촉촉한 수분 베이스를 만들어 다음 단계 흡수력을 높여주는 발효 스킨입니다.\n\n용량 및 구성: 150ml"
   },
   {
     "slug": "opus-4",
@@ -1005,7 +1017,7 @@ export const products = [
     "price": "28,000원",
     "image": "/assets/products/opus-4.png",
     "summary": "오퍼스의 토너&로션 카테고리 제품입니다.",
-    "description": "오퍼스 로맨틱 루비어스 에멀전은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 오퍼스 라인의 토너&로션 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 28,000원입니다."
+    "description": "유수분 밸런스를 조절해 피부 속당김을 방지하고 거칠어진 피부를 매끈하고 촉촉하게 가꾸어 주는 발효 에멀젼입니다.\n\n용량 및 구성: 150ml"
   },
   {
     "slug": "opus-essence",
@@ -1017,7 +1029,7 @@ export const products = [
     "price": "34,000원",
     "image": "/assets/products/opus-essence.png",
     "summary": "오퍼스의 크림&에센스&앰플 카테고리 제품입니다.",
-    "description": "오퍼스 로맨틱 루비어스 에센스은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 오퍼스 라인의 크림&에센스&앰플 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 34,000원입니다."
+    "description": "콜라겐 성분이 피부 탄력과 결을 개선해주며 고농축 석류발효추출물로 잃어버린 피부 활력을 되살려주는 고농축 에센스입니다.\n\n용량 및 구성: 60ml"
   },
   {
     "slug": "opus-cream",
@@ -1029,7 +1041,7 @@ export const products = [
     "price": "34,000원",
     "image": "/assets/products/opus-cream.png",
     "summary": "오퍼스의 크림&에센스&앰플 카테고리 제품입니다.",
-    "description": "오퍼스 로맨틱 루비어스 크림은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 오퍼스 라인의 크림&에센스&앰플 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 34,000원입니다."
+    "description": "발효석류와 콜라겐의 이중 시너지로 피부에 탄력감과 생기를 부여하고 충분한 수분 보호막을 형성하는 부드러운 크리미 타입의 발효 크림입니다.\n\n용량 및 구성: 50ml"
   },
   {
     "slug": "opus-sun-cream",
@@ -1041,7 +1053,7 @@ export const products = [
     "price": "22,000원",
     "image": "/assets/products/opus-sun-cream.png",
     "summary": "오퍼스의 마스크/마사지/SUN 카테고리 제품입니다.",
-    "description": "오퍼스 로맨틱 선크림은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 오퍼스 라인의 마스크/마사지/SUN 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 22,000원입니다."
+    "description": "자연유래 플라워 성분을 함유해 피부결을 깨끗하게 정돈해주는 가벼운 사용감의 오일 프리 사계절 선크림입니다. 끈적임과 백탁 부담을 줄여 메이크업 전에도 산뜻하게 사용할 수 있습니다."
   },
   {
     "slug": "opus-5",
@@ -1053,7 +1065,7 @@ export const products = [
     "price": "26,000원",
     "image": "/assets/products/opus-5.png",
     "summary": "오퍼스의 헤어&바디 카테고리 제품입니다.",
-    "description": "오퍼스 로맨틱 필링젤(리뉴얼)은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 오퍼스 라인의 헤어&바디 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 26,000원입니다."
+    "description": "천연 셀룰로오스 성분이 피부에 부드럽게 롤링되어 각질 제거를 돕고 매끈한 피부로 가꾸어 주는 오퍼스 로맨틱 필링젤입니다.\n\n용량 및 구성: 150ml"
   },
   {
     "slug": "opus-2-3",
@@ -1065,7 +1077,7 @@ export const products = [
     "price": "38,000원",
     "image": "/assets/products/opus-2-3.jpg",
     "summary": "오퍼스의 남성제품 카테고리 제품입니다.",
-    "description": "오퍼스 옴므 2종세트은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 오퍼스 라인의 남성제품 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 38,000원입니다."
+    "description": "오퍼스 옴므 2종세트는 남성 피부를 산뜻하게 정돈하고 촉촉한 밸런스를 더해주는 데일리 남성 스킨케어 세트입니다."
   },
   {
     "slug": "sibjangsaeng-cheonjihyang-forman-2pcs-set",
@@ -1075,7 +1087,7 @@ export const products = [
     "typeName": "남성제품",
     "name": "십장생 천지향 포맨 2종 세트",
     "price": "80,000원",
-    "image": "/assets/products/sibjangsaeng-cheonjihyang-forman-2pcs-set.png",
+    "image": "/assets/products/sibjangsaeng-cheonjihyang-forman-2pcs-set.jpg",
     "summary": "십장생 천지향 포맨 남성 스킨케어 2종 세트입니다.",
     "description": "십장생 천지향 포맨 2종 세트는 남성 피부를 위한 한방 스킨케어 세트입니다. 구성은 스킨, 로션 140ml, 31ml와 에센스 45ml이며 소비자가 기준가는 80,000원입니다."
   },
@@ -1111,7 +1123,7 @@ export const products = [
     "typeName": "남성제품",
     "name": "십장생 천심 포맨 올인원 스킨에센스",
     "price": "40,000원",
-    "image": "/assets/products/sibjangsaeng-cheonsim-forman-all-in-one.png",
+    "image": "/assets/products/sibjangsaeng-cheonsim-forman-all-in-one.jpg",
     "summary": "십장생 천심 포맨 올인원 스킨에센스입니다.",
     "description": "십장생 천심 포맨 올인원 스킨에센스는 남성 피부를 위한 올인원 케어 제품입니다. 구성은 올인원 스킨에센스 140ml, 30ml이며 소비자가 기준가는 40,000원입니다."
   },
@@ -1123,9 +1135,9 @@ export const products = [
     "typeName": "남성제품",
     "name": "오퍼스 옴므 알로에 2종세트",
     "price": "38,000원",
-    "image": "/assets/products/opus-2-4.png",
+    "image": "/assets/products/opus-2-4.jpg",
     "summary": "오퍼스의 남성제품 카테고리 제품입니다.",
-    "description": "오퍼스 옴므 알로에 2종세트은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 오퍼스 라인의 남성제품 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 38,000원입니다."
+    "description": "오퍼스 옴므 알로에 2종세트는 알로에 성분을 담아 건조하고 거칠어진 남성 피부를 산뜻하고 촉촉하게 가꾸어 주는 스킨케어 세트입니다."
   },
   {
     "slug": "opus-essence-2",
@@ -1137,7 +1149,7 @@ export const products = [
     "price": "28,000원",
     "image": "/assets/products/opus-essence-2.png",
     "summary": "오퍼스의 남성제품 카테고리 제품입니다.",
-    "description": "오퍼스 옴므 올인원 스킨에센스은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 오퍼스 라인의 남성제품 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 28,000원입니다."
+    "description": "오퍼스 옴므 올인원 스킨에센스는 바쁜 남성 피부를 위해 스킨과 에센스 케어를 한 번에 도와주는 올인원 제품입니다. 세안 후 산뜻하게 흡수되어 수분감을 더하고 피부결을 정돈합니다."
   },
   {
     "slug": "rosee-blossom-makeup-base",
@@ -1149,7 +1161,7 @@ export const products = [
     "price": "24,000원",
     "image": "/assets/products/rosee-blossom-makeup-base.png",
     "summary": "로제블라썸의 메이크업 카테고리 제품입니다.",
-    "description": "로제 블라썸 메이크업베이스은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 로제블라썸 라인의 메이크업 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 24,000원입니다."
+    "description": "다마스크 로즈 유래 아로마콜로지 원료와 6 Flower Complex를 담은 메이크업 베이스입니다. 부드러운 발림성으로 얇게 밀착되고 초록색 피그먼트가 붉은 톤을 자연스럽게 보정해줍니다.\n\n용량 및 구성: 45ml"
   },
   {
     "slug": "rosee-blossom-skin-cover21-23",
@@ -1161,7 +1173,7 @@ export const products = [
     "price": "34,000원",
     "image": "/assets/products/rosee-blossom-skin-cover21-23.png",
     "summary": "로제블라썸의 메이크업 카테고리 제품입니다.",
-    "description": "로제 블라썸 스킨커버21,23호은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 로제블라썸 라인의 메이크업 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 34,000원입니다."
+    "description": "한 듯 안 한 듯 얇게 밀착된 화장이 오래 지속되고 단 한 번의 픽업으로 화사함을 얹어주는 고밀도 스킨커버입니다.\n\n용량 및 구성: 15g ㅣ 21호/23호"
   },
   {
     "slug": "rosee-blossom-cushion21-23",
@@ -1173,7 +1185,7 @@ export const products = [
     "price": "38,000원",
     "image": "/assets/products/rosee-blossom-cushion21-23.png",
     "summary": "로제블라썸의 메이크업 카테고리 제품입니다.",
-    "description": "로제 블라썸 쿠션21,23호은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 로제블라썸 라인의 메이크업 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 38,000원입니다."
+    "description": "보습 오일과 샤이닝 오일이 촉촉하고 자연스러운 윤광 메이크업을 완성해주는 쿠션입니다. 뛰어난 보습력과 밀착력으로 하루 종일 끈적임 없이 매끄러운 피부 표현을 도와줍니다.\n\n용량 및 구성: 15g + 15g ㅣ 21호/23호 ㅣ SPF40 PA++"
   },
   {
     "slug": "rosee-blossom-twoway-cake-21-23",
@@ -1183,9 +1195,9 @@ export const products = [
     "typeName": "메이크업",
     "name": "로제 블라썸 투웨이케익 21,23호",
     "price": "32,000원",
-    "image": "/assets/products/rosee-blossom-twoway-cake-21-23.png",
+    "image": "/assets/products/rosee-blossom-twoway-cake-21-23.jpg",
     "summary": "로제블라썸의 메이크업 카테고리 제품입니다.",
-    "description": "로제 블라썸 투웨이케익 21,23호은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 로제블라썸 라인의 메이크업 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 32,000원입니다."
+    "description": "구상 파우더와 다양한 사이즈의 코팅 판상 파우더를 적용해 땀에 강하고 피지를 효과적으로 흡수하여 보송보송한 피부를 연출하는 투웨이케익입니다.\n\n용량 및 구성: 17g ㅣ 21호/23호"
   },
   {
     "slug": "rosee-blossom-foundation21-23",
@@ -1197,7 +1209,7 @@ export const products = [
     "price": "24,000원",
     "image": "/assets/products/rosee-blossom-foundation21-23.png",
     "summary": "로제블라썸의 메이크업 카테고리 제품입니다.",
-    "description": "로제 블라썸 파운데이션21,23호은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 로제블라썸 라인의 메이크업 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 24,000원입니다."
+    "description": "부드럽게 롤링되며 피부 위에 촉촉하고 윤기 있게 밀착되어 묵직하거나 번들거림 없이 고급스러운 광채 메이크업을 연출하는 파운데이션입니다.\n\n용량 및 구성: 45ml ㅣ 21호/23호"
   },
   {
     "slug": "celactive",
@@ -1209,7 +1221,7 @@ export const products = [
     "price": "18,000원",
     "image": "/assets/products/celactive.jpg",
     "summary": "셀액티브의 메이크업 카테고리 제품입니다.",
-    "description": "셀액티브 마스카라은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 셀액티브 라인의 메이크업 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 18,000원입니다."
+    "description": "또렷한 눈매 연출을 돕는 셀액티브 마스카라입니다. 속눈썹을 깔끔하게 코팅해 번짐 부담을 줄이고 선명한 아이 메이크업을 완성합니다."
   },
   {
     "slug": "celactive-2",
@@ -1221,7 +1233,7 @@ export const products = [
     "price": "17,000원",
     "image": "/assets/products/celactive-2.png",
     "summary": "셀액티브의 메이크업 카테고리 제품입니다.",
-    "description": "셀액티브 아이라이너은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 셀액티브 라인의 메이크업 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 17,000원입니다."
+    "description": "선명한 라인으로 또렷한 눈매를 연출하는 셀액티브 아이라이너입니다. 부드러운 사용감으로 원하는 라인을 정교하게 표현할 수 있습니다."
   },
   {
     "slug": "eve-doctor-ewg-cleansing",
@@ -1233,7 +1245,7 @@ export const products = [
     "price": "13,000원",
     "image": "/assets/products/eve-doctor-ewg-cleansing.png",
     "summary": "이브닥터의 클렌징 카테고리 제품입니다.",
-    "description": "이브닥터 제떼 EWG그린 저자극 약산성 클렌징 버블폼은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 이브닥터 라인의 클렌징 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 13,000원입니다."
+    "description": "EWG 그린 등급 콘셉트의 저자극 약산성 버블폼으로 민감한 피부도 부담 없이 사용할 수 있도록 부드러운 거품이 노폐물을 산뜻하게 씻어내는 클렌징 제품입니다."
   },
   {
     "slug": "eve-doctor-ewg-cleansing-2",
@@ -1245,7 +1257,7 @@ export const products = [
     "price": "13,000원",
     "image": "/assets/products/eve-doctor-ewg-cleansing-2.png",
     "summary": "이브닥터의 클렌징 카테고리 제품입니다.",
-    "description": "이브닥터 제떼 EWG그린 저자극 약산성 클렌징 워터은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 이브닥터 라인의 클렌징 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 13,000원입니다."
+    "description": "EWG 그린 등급 콘셉트의 저자극 약산성 클렌징 워터로 메이크업 잔여물과 노폐물을 부드럽게 닦아내며 세안 전후 피부를 산뜻하게 정돈해줍니다."
   },
   {
     "slug": "eve-doctor-cleansing",
@@ -1257,7 +1269,7 @@ export const products = [
     "price": "13,000원",
     "image": "/assets/products/eve-doctor-cleansing.png",
     "summary": "이브닥터의 클렌징 카테고리 제품입니다.",
-    "description": "이브닥터 제떼 클렌징 젤 폼은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 이브닥터 라인의 클렌징 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 13,000원입니다."
+    "description": "젤 타입 제형이 물과 만나 부드럽게 거품으로 변해 피부 노폐물을 깨끗하게 씻어내는 클렌징 젤 폼입니다. 세안 후에도 당김을 줄이고 산뜻한 피부결로 정돈해줍니다."
   },
   {
     "slug": "eve-doctor-hair-shampoo",
@@ -1269,7 +1281,7 @@ export const products = [
     "price": "20,000원",
     "image": "/assets/products/eve-doctor-hair-shampoo.png",
     "summary": "이브닥터의 헤어&바디 카테고리 제품입니다.",
-    "description": "이브닥터 헤어로스 케어 샴푸은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 이브닥터 라인의 헤어&바디 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 20,000원입니다."
+    "description": "마데카소사이드와 탈모 증상 완화 기능성 성분을 함유해 두피 각질과 노폐물을 부드럽게 씻어내고 손상된 모발과 두피를 케어하는 토탈 케어 샴푸입니다.\n\n용량 및 구성: 480ml"
   },
   {
     "slug": "eve-doctor-hair",
@@ -1281,7 +1293,7 @@ export const products = [
     "price": "20,000원",
     "image": "/assets/products/eve-doctor-hair.png",
     "summary": "이브닥터의 헤어&바디 카테고리 제품입니다.",
-    "description": "이브닥터 헤어로스케어 토닉은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 이브닥터 라인의 헤어&바디 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 20,000원입니다."
+    "description": "두피와 모근에 산뜻하게 사용할 수 있는 헤어로스케어 토닉입니다. 힘없이 처진 두피에 수분감과 청량감을 더해 건강한 두피 컨디션을 유지하도록 도와줍니다."
   },
   {
     "slug": "rosee-formen-2",
@@ -1291,9 +1303,9 @@ export const products = [
     "typeName": "남성제품",
     "name": "로제 포맨 2종세트",
     "price": "30,000원",
-    "image": "/assets/products/rosee-formen-2.png",
+    "image": "/assets/products/rosee-formen-2.jpg",
     "summary": "스페셜 라인의 남성제품 카테고리 제품입니다.",
-    "description": "로제 포맨 2종세트은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 스페셜 라인 라인의 남성제품 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 30,000원입니다."
+    "description": "로제 포맨 2종세트는 남성 피부를 산뜻하게 정돈하고 촉촉한 밸런스를 더해주는 데일리 남성 스킨케어 세트입니다."
   },
   {
     "slug": "rosee",
@@ -1305,7 +1317,55 @@ export const products = [
     "price": "28,000원",
     "image": "/assets/products/rosee.jpg",
     "summary": "스페셜 라인의 크림&에센스&앰플 카테고리 제품입니다.",
-    "description": "로제 핑크 멀티밤은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 스페셜 라인 라인의 크림&에센스&앰플 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 28,000원입니다."
+    "description": "피부 온도에 적당히 멜팅되어 끈적임이 없고 고급스러운 피부 윤광을 부여해주며, 잡티 완화에 도움을 주어 점차 깨끗한 피부로 가꾸어 주는 멀티밤입니다.\n\n용량 및 구성: 10g"
+  },
+  {
+    "slug": "cyserea-rose-de-angel",
+    "brandId": "cyserea",
+    "brandName": "시세리아",
+    "typeId": "fragrance",
+    "typeName": "향수&기타",
+    "name": "시세리아 로제 드 엔젤",
+    "price": "38,000원",
+    "image": "/assets/products/cyserea-rose-de-angel.jpg",
+    "summary": "화사한 봄기운과 부드러운 머스크 잔향이 어우러지는 100ml 오 드 퍼퓸입니다.",
+    "description": "천천히 불어오는 바람처럼 이국적이면서도 상쾌하고 화사한 봄의 기운을 전하는 향수입니다. 여러 꽃의 향이 만나 봄날의 햇살 같은 따뜻함을 만들고, 마지막에는 부드러운 머스크 향이 편안한 숲의 여운처럼 은은하게 남습니다.\n\n용량 및 구성: 100ml"
+  },
+  {
+    "slug": "cyserea-bold-fresh",
+    "brandId": "cyserea",
+    "brandName": "시세리아",
+    "typeId": "fragrance",
+    "typeName": "향수&기타",
+    "name": "시세리아 볼드 프레쉬",
+    "price": "38,000원",
+    "image": "/assets/products/cyserea-bold-fresh.jpg",
+    "summary": "시트러스와 블랙페퍼의 산뜻한 시작에 우디 머스크 잔향을 더한 100ml 오 드 퍼퓸입니다.",
+    "description": "레몬과 블랙페퍼의 스파이시한 첫 향으로 시작해 산뜻하면서도 부드러운 카리스마를 남기는 향수입니다. 스치듯 느껴지는 플로럴 향이 무겁지 않은 깊이를 더하고, 머스크와 우디 노트가 기분 좋은 여운을 오래 남깁니다.\n\n용량 및 구성: 100ml"
+  },
+  {
+    "slug": "cyserea-greener-pure",
+    "brandId": "cyserea",
+    "brandName": "시세리아",
+    "typeId": "fragrance",
+    "typeName": "향수&기타",
+    "name": "시세리아 그리너퓨어",
+    "price": "25,000원",
+    "image": "/assets/products/cyserea-greener-pure.jpg",
+    "summary": "스파이시한 첫 향과 시더우드의 깊은 여운이 어우러지는 50ml 오 드 퍼퓸입니다.",
+    "description": "핑크페퍼와 시나몬의 유니크하고 강렬한 스파이시 향이 특별한 첫인상을 전하는 향수입니다. 이어지는 시더우드의 부드러운 깊이가 오묘한 여운을 만들며, 순수하면서도 매혹적인 분위기를 완성합니다.\n\n용량 및 구성: 50ml"
+  },
+  {
+    "slug": "cyserea-hebe-gardeneri",
+    "brandId": "cyserea",
+    "brandName": "시세리아",
+    "typeId": "fragrance",
+    "typeName": "향수&기타",
+    "name": "시세리아 헤베 가드너리",
+    "price": "25,000원",
+    "image": "/assets/products/cyserea-hebe-gardeneri.jpg",
+    "summary": "산뜻한 첫 향과 따뜻한 우디 잔향이 이어지는 50ml 오 드 퍼퓸입니다.",
+    "description": "첫 노트의 산뜻함이 가볍게 지나가면서도 깊고 부드러운 성숙한 이미지를 남기는 향수입니다. 오렌지 블라썸과 프리지아가 아름다운 에너지를 더하고, 복숭아와 시더우드의 따뜻한 잔향이 피부 위에 은은하게 머뭅니다.\n\n용량 및 구성: 50ml"
   },
   {
     "slug": "cyserea-cream2",
@@ -1313,23 +1373,11 @@ export const products = [
     "brandName": "시세리아",
     "typeId": "cream-essence",
     "typeName": "크림&에센스&앰플",
-    "name": "시세리아 핸드크림2종",
+    "name": "시세리아 핸드크림 2종 세트",
     "price": "9,000원",
-    "image": "/assets/products/cyserea-cream2.png",
-    "summary": "스페셜 라인의 크림&에센스&앰플 카테고리 제품입니다.",
-    "description": "시세리아 핸드크림2종은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 스페셜 라인 라인의 크림&에센스&앰플 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다. 소비자가 기준가는 9,000원입니다."
-  },
-  {
-    "slug": "cyserea-perfume",
-    "brandId": "cyserea",
-    "brandName": "시세리아",
-    "typeId": "fragrance",
-    "typeName": "향수&기타",
-    "name": "시세리아 향수",
-    "price": "소비자가 문의",
-    "image": "/assets/products/cyserea-perfume.png",
-    "summary": "스페셜 라인의 향수&기타 카테고리 제품입니다.",
-    "description": "시세리아 향수은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 스페셜 라인 라인의 향수&기타 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다."
+    "image": "/assets/products/cyserea-cream2.jpg",
+    "summary": "화이트 머스크와 릴리 향으로 구성된 시세리아 핸드크림 2종 세트입니다.",
+    "description": "수분공급과 피부 진정에 도움을 주는 6가지 플라워 추출물이 끈적임 없이 부드러운 수분막을 형성해 매끈한 손 피부로 관리해 주는 핸드크림 2종 세트입니다.\n\n용량 및 구성: 60ml * 2"
   },
   {
     "slug": "uv-twoway-cake",
@@ -1341,6 +1389,6 @@ export const products = [
     "price": "소비자가 문의",
     "image": "/assets/products/uv-twoway-cake.png",
     "summary": "스페셜 라인의 메이크업 카테고리 제품입니다.",
-    "description": "환희 UV 투웨이케익은 로제화장품 카탈로그 자료와 제품 이미지 폴더를 기준으로 등록한 스페셜 라인 라인의 메이크업 제품입니다. 제품 상세 설명과 전성분, 용량 정보는 추후 공식 자료에 맞춰 추가 보완할 수 있습니다."
+    "description": "환희 UV 투웨이케익은 피부톤을 보송하게 정돈하고 자외선 차단 기능까지 더한 메이크업 제품입니다. 가볍게 밀착되어 번들거림을 잡고 깔끔한 피부 표현을 도와줍니다."
   }
 ] as const;

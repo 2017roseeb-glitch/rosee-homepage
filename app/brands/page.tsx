@@ -1,6 +1,10 @@
 import { brandLines } from "../catalog-data";
 import Link from "next/link";
 
+function isBidanmoProduct(slug: string) {
+  return slug.includes("bidanmo");
+}
+
 export default function BrandsPage() {
   return (
     <>
@@ -19,7 +23,11 @@ export default function BrandsPage() {
               </div>
               <div className="shop-product-grid">
                 {brand.products.map((product) => (
-                  <Link className="shop-product-card" href={`/products/${product.slug}`} key={product.slug}>
+                  <Link
+                    className={`shop-product-card ${isBidanmoProduct(product.slug) ? "is-bidanmo-product" : ""}`}
+                    href={`/products/${product.slug}`}
+                    key={product.slug}
+                  >
                     <div className="shop-product-image">
                       <img src={product.image} alt={`${product.name} 제품 이미지`} />
                     </div>

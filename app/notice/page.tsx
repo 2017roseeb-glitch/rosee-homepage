@@ -1,8 +1,6 @@
-const notices = [
-  ["로제화장품 공지사항", "회사 소식과 제품 안내를 이곳에서 확인할 수 있습니다."],
-  ["제품 및 구매 안내", "공식몰 제품 입고, 구매 안내, 고객센터 운영 정보를 순차적으로 등록할 수 있습니다."],
-  ["정품 및 고객 안내", "정품 인증, 이용 안내, 고객 공지 등을 게시하는 공간입니다."],
-];
+import { notices } from "./data";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export default function NoticePage() {
   return (
@@ -13,13 +11,39 @@ export default function NoticePage() {
         <p>로제화장품의 주요 안내와 새 소식을 전하는 공간입니다.</p>
       </section>
       <section className="page-section">
-        <div className="notice-list">
-          {notices.map(([title, text]) => (
-            <article key={title}>
-              <h3>{title}</h3>
-              <p>{text}</p>
-            </article>
-          ))}
+        <div className="notice-list" id="notice">
+          <div className="notice-board" aria-label="공지사항 목록">
+            <div className="notice-board-head">
+              <span>구분</span>
+              <span>공지제목</span>
+              <span>날짜</span>
+            </div>
+            {notices.map((notice) => (
+              <a className="notice-row" href={`${basePath}/notice/${notice.slug}/`} key={notice.slug}>
+                <span className="notice-badge">공지</span>
+                <strong>{notice.title}</strong>
+                <time>{notice.date}</time>
+              </a>
+            ))}
+          </div>
+          <div className="notice-board-controls">
+            <label className="notice-search">
+              <span className="sr-only">공지사항 검색</span>
+              <input type="search" placeholder="검색어를 입력해주세요." />
+            </label>
+            <button type="button">검색</button>
+          </div>
+          <div className="notice-pagination" aria-label="공지사항 페이지">
+            <button type="button" aria-label="이전 페이지">
+              ‹
+            </button>
+            <button type="button" className="is-active">
+              1
+            </button>
+            <button type="button" aria-label="다음 페이지">
+              ›
+            </button>
+          </div>
         </div>
       </section>
     </>

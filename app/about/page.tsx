@@ -267,7 +267,7 @@ export default function AboutPage() {
       <section className="about-partner-cinema">
         <div className="about-scene-title scroll-reveal">
           <span>PARTNER</span>
-          <h2>대한민국 대표 ODM 회사에서 제조, 생산</h2>
+          <h2>믿을수 있는 대한민국 대표 ODM 회사에서 제조, 생산 합니다</h2>
         </div>
         <div className="partner-logo-row scroll-reveal">
           {partners.map((partner) => (
