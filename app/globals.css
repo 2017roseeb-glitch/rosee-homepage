@@ -86,7 +86,8 @@ img {
 }
 
 .site-nav a,
-.shop-link {
+.shop-link,
+.language-button {
   transition: color 160ms ease, border-color 160ms ease;
 }
 
@@ -160,6 +161,107 @@ img {
   font-size: 14px;
   font-weight: 800;
   padding: 10px 18px;
+}
+
+.header-actions {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.language-selector {
+  position: relative;
+}
+
+.language-selector::after {
+  content: "";
+  height: 16px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+
+#google_translate_element,
+.goog-te-banner-frame,
+.goog-te-gadget,
+.goog-logo-link,
+.goog-te-balloon-frame,
+body > .skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+.language-button {
+  align-items: center;
+  background: #111;
+  border: 1px solid #111;
+  border-radius: 999px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  gap: 7px;
+  padding: 10px 16px;
+  white-space: nowrap;
+}
+
+.language-button:hover,
+.language-selector:focus-within .language-button {
+  background: var(--rose);
+  border-color: var(--rose);
+}
+
+.language-menu {
+  background: rgba(18, 17, 15, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.22);
+  display: grid;
+  gap: 4px;
+  min-width: 220px;
+  opacity: 0;
+  padding: 16px;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  transform: translateY(6px);
+  transition: opacity 180ms ease, transform 180ms ease;
+  z-index: 30;
+}
+
+.language-selector:hover .language-menu,
+.language-selector:focus-within .language-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.language-menu button {
+  background: transparent;
+  border: 0;
+  color: #f5f1ea;
+  cursor: pointer;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 13px 16px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.language-menu button:hover,
+.language-menu button:focus-visible,
+.language-menu button.is-active {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 
 .brand-hero {
@@ -1799,12 +1901,19 @@ img {
   grid-template-columns: minmax(0, 1.22fr) minmax(0, 0.78fr);
 }
 
+.domestic-cinema {
+  gap: clamp(20px, 3vw, 44px);
+  grid-template-columns: minmax(360px, 0.86fr) minmax(0, 1.14fr);
+}
+
 .about-market-text {
   max-width: 720px;
 }
 
 .domestic-cinema .about-market-text {
-  margin-left: clamp(28px, 3.2vw, 64px);
+  justify-self: end;
+  margin-left: 0;
+  max-width: 640px;
 }
 
 .about-market-text h2 {
@@ -2456,13 +2565,21 @@ body:has(.brand-glass-bar) .scroll-top-button {
   font-size: clamp(18px, 1.35vw, 22px);
   font-weight: 700;
   line-height: 1.2;
-  margin: 18px 0 24px;
+  margin: 18px 0 6px;
 }
 
 .product-detail-info p {
   color: #666;
   line-height: 1.75;
   margin: 0 0 16px;
+}
+
+.product-detail-info .product-price-note {
+  color: #8a8a8a;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0 0 24px;
 }
 
 .product-detail-meta {

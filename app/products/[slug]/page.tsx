@@ -2,6 +2,7 @@ import type { CSSProperties } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { products } from "../../catalog-data";
+import { formatPrice, isWonPrice } from "../../price-format";
 import { BackToProductsButton } from "./back-to-products-button";
 
 type ProductDetailPageProps = {
@@ -105,7 +106,8 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
         <div className="product-detail-info">
           <span>{product.brandName}</span>
           <h1 style={{ "--title-length": product.name.length } as CSSProperties}>{product.name}</h1>
-          <strong>{product.price}</strong>
+          <strong>{formatPrice(product.price)}</strong>
+          {isWonPrice(product.price) ? <p className="product-price-note">소비자 가격은 원화(KRW) 기준입니다.</p> : null}
           <p>{product.summary}</p>
           {detailCopy.paragraphs.map((paragraph, index) => (
             <p key={`${product.slug}-description-${index}`}>{paragraph}</p>

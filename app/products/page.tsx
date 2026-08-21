@@ -1,4 +1,5 @@
 import { brandLines } from "../catalog-data";
+import { formatPrice } from "../price-format";
 import { ProductListLink, ProductScrollRestorer } from "../product-scroll-state";
 
 function productThumbnail(slug: string) {
@@ -69,7 +70,7 @@ export default function ProductsPage() {
                       <img src={productThumbnail(product.slug)} alt={`${product.name} 제품 이미지`} />
                     </div>
                     <strong>{product.name}</strong>
-                    <span>{product.price}</span>
+                    <span>{formatPrice(product.price)}</span>
                   </ProductListLink>
                 ))}
               </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Noto_Sans_KR } from "next/font/google";
 import { brandLines, productTypes } from "./catalog-data";
+import LanguageSelector from "./language-selector";
 import ScrollTopButton from "./scroll-top-button";
 import SiteNav from "./site-nav";
 import "./globals.css";
@@ -74,9 +75,12 @@ export default function RootLayout({
             <img src="/assets/company/rosee-wordmark.png" alt="ROSEE" />
           </Link>
           <SiteNav menus={menus} />
-          <a className="shop-link" href="https://roseeshop.com/" target="_blank" rel="noreferrer">
-            공식몰
-          </a>
+          <div className="header-actions">
+            <a className="shop-link" href="https://roseeshop.com/" target="_blank" rel="noreferrer">
+              공식몰
+            </a>
+            <LanguageSelector />
+          </div>
         </header>
         <main>{children}</main>
         <footer className="site-footer">

@@ -1,4 +1,5 @@
 import { brandLines } from "../catalog-data";
+import { formatPrice } from "../price-format";
 import Link from "next/link";
 
 function isBidanmoProduct(slug: string) {
@@ -32,7 +33,7 @@ export default function BrandsPage() {
                       <img src={product.image} alt={`${product.name} 제품 이미지`} />
                     </div>
                     <strong>{product.name}</strong>
-                    <span>{product.price}</span>
+                    <span>{formatPrice(product.price)}</span>
                   </Link>
                 ))}
               </div>

@@ -1,5 +1,5 @@
 :HL["/rosee-homepage/_next/static/chunks/11v34guy3s-~a.css","style"]
-:HL["/rosee-homepage/_next/static/chunks/0rzha67hd8eq7.css","style"]
+:HL["/rosee-homepage/_next/static/chunks/0bb85e45yc47j.css","style"]
 :HL["/rosee-homepage/_next/static/media/fca78c2ee6cec166-s.p.0kizb7t94.kuf.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/rosee-homepage/assets/company/rosee-wordmark.png","image"]
 :HL["/rosee-homepage/assets/products/brand-homepage/sibjangsaeng-cheonsim-toner.png","image"]
@@ -59,7 +59,6 @@
 :HL["/rosee-homepage/assets/products/brand-homepage/eco-aloe-treatment.png","image"]
 :HL["/rosee-homepage/assets/products/brand-homepage/eco-aloe-hair-gel.png","image"]
 :HL["/rosee-homepage/assets/products/brand-homepage/eco-aloe-multi-essence.png","image"]
-:HL["/rosee-homepage/assets/products/brand-homepage/eco-aloe-hair-spray.png","image"]
 :HL["/rosee-homepage/assets/products/majarin-sunblock.png","image"]
 :HL["/rosee-homepage/assets/products/majarin-2.png","image"]
 :HL["/rosee-homepage/assets/products/majarin-3.png","image"]
@@ -101,6 +100,7 @@
 :HL["/rosee-homepage/assets/products/rosee-formen-2.jpg","image"]
 :HL["/rosee-homepage/assets/products/rosee.jpg","image"]
 :HL["/rosee-homepage/assets/products/uv-twoway-cake.png","image"]
+:HL["/rosee-homepage/assets/products/brand-homepage/eco-aloe-hair-spray.png","image"]
 :HL["/rosee-homepage/assets/products/brand-homepage/eco-aloe-coating-essence.png","image"]
 :HL["/rosee-homepage/assets/products/brand-homepage/eco-aloe-strong-mist.png","image"]
 :HL["/rosee-homepage/assets/products/brand-homepage/eco-aloe-argan-hair-oil.png","image"]
@@ -118,4 +118,4 @@
 :HL["/rosee-homepage/assets/products/majarin-with-caviar-eye-cream.png","image"]
 :HL["/rosee-homepage/assets/products/majarin-with-caviar-5pcs-set.png","image"]
 :HL["/rosee-homepage/assets/products/majarin-with-caviar-foam-cleansing.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"brands","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"9TMuYyO2nCE_hoY4HPA09"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"brands","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"Qn8Jtzdi_SxfuHOjFmSjp"}
