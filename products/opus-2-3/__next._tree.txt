@@ -1,6 +1,6 @@
 :HL["/rosee-homepage/_next/static/chunks/11v34guy3s-~a.css","style"]
-:HL["/rosee-homepage/_next/static/chunks/0bb85e45yc47j.css","style"]
+:HL["/rosee-homepage/_next/static/chunks/0pgvsux8tyu-4.css","style"]
 :HL["/rosee-homepage/_next/static/media/fca78c2ee6cec166-s.p.0kizb7t94.kuf.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/rosee-homepage/assets/company/rosee-wordmark.png","image"]
 :HL["/rosee-homepage/assets/products/opus-2-3.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"opus-2-3","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"Qn8Jtzdi_SxfuHOjFmSjp"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"opus-2-3","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"AtwuYxCorsRAo6zTqigmL"}

@@ -1,4 +1,5 @@
 import AboutScrollReveal from "./scroll-reveal";
+import { ProperNounText } from "../proper-noun-text";
 
 const companyFacts = [
   ["회사명", "로제화장품(주)"],
@@ -80,8 +81,9 @@ export default function AboutPage() {
             기업의 미래가치 창조
           </h1>
           <p>
-            로제는 프랑스어로 이슬을 뜻하며, 이슬처럼 맑고 깨끗한 피부를 선사하고 싶은 마음을 담은
-            브랜드입니다.
+            <ProperNounText>
+              로제는 프랑스어로 이슬을 뜻하며, 이슬처럼 맑고 깨끗한 피부를 선사하고 싶은 마음을 담은 브랜드입니다.
+            </ProperNounText>
           </p>
         </div>
         <div className="about-cinema-stats scroll-reveal">
@@ -110,11 +112,13 @@ export default function AboutPage() {
           <h2>
             1991년부터 이어온
             <br />
-            로제의 브랜드 경험
+            <ProperNounText>로제의 브랜드 경험</ProperNounText>
           </h2>
           <p>
-            십장생, 오퍼스, 마자린, 에코알로에 등 오랜 시간 고객과 함께한 브랜드를 기반으로
-            스킨케어부터 헤어&바디, 색조까지 제품 영역을 넓혀가고 있습니다.
+            <ProperNounText>
+              십장생, 오퍼스, 마자린, 에코알로에 등 오랜 시간 고객과 함께한 브랜드를 기반으로 스킨케어부터 헤어&바디,
+              색조까지 제품 영역을 넓혀가고 있습니다.
+            </ProperNounText>
           </p>
         </div>
         <div className="about-product-reel scroll-reveal" aria-label="로제화장품 브랜드 제품 흐름">
@@ -124,7 +128,9 @@ export default function AboutPage() {
                 <div className="about-reel-product">
                   <img src={product.image} alt="" />
                 </div>
-                <strong>{product.name}</strong>
+                <strong>
+                  <ProperNounText>{product.name}</ProperNounText>
+                </strong>
               </article>
             ))}
           </div>
@@ -140,8 +146,10 @@ export default function AboutPage() {
           <div className="about-fact-word scroll-scene">
             <img src="/assets/company/rosee-wordmark.png" alt="ROSEE" />
             <p>
-              1991년부터 십장생, 오퍼스, 마자린 등의 브랜드로 고객과 함께하며 제품 만족을 통한 신뢰를
-              이어가고 있습니다.
+              <ProperNounText>
+                1991년부터 십장생, 오퍼스, 마자린 등의 브랜드로 고객과 함께하며 제품 만족을 통한 신뢰를 이어가고
+                있습니다.
+              </ProperNounText>
             </p>
           </div>
           <div className="about-fact-card scroll-reveal">
@@ -149,7 +157,9 @@ export default function AboutPage() {
               {companyFacts.map(([term, description]) => (
                 <div key={term}>
                   <dt>{term}</dt>
-                  <dd>{description}</dd>
+                  <dd>
+                    <ProperNounText>{description}</ProperNounText>
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -160,7 +170,9 @@ export default function AboutPage() {
       <section className="about-value-scene">
         <div className="about-scene-title scroll-reveal">
           <span>attitude</span>
-          <h2>로제화장품이 일하는 방식</h2>
+          <h2>
+            <ProperNounText>로제화장품이 일하는 방식</ProperNounText>
+          </h2>
         </div>
         <div className="about-value-cards scroll-reveal">
           {values.map(([title, english, description]) => (

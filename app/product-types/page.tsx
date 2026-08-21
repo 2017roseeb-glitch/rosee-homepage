@@ -1,4 +1,5 @@
 import { productTypes } from "../catalog-data";
+import { ProductCardName } from "../product-card-name";
 import { formatPrice } from "../price-format";
 import { ProductListLink, ProductScrollRestorer } from "../product-scroll-state";
 
@@ -48,8 +49,12 @@ export default function ProductTypesPage() {
                     <div className="shop-product-image">
                       <img src={productThumbnail(product.slug)} alt={`${product.name} 제품 이미지`} />
                     </div>
-                    <strong>{product.name}</strong>
-                    <span>{formatPrice(product.price)}</span>
+                    <strong>
+                      <ProductCardName name={product.name} />
+                    </strong>
+                    <span className="notranslate" translate="no">
+                      {formatPrice(product.price)}
+                    </span>
                   </ProductListLink>
                 ))}
               </div>

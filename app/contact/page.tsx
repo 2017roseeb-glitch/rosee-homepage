@@ -3,7 +3,13 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
 
-const consultationTypes = ["제품구입", "제품상담", "입점/제휴", "기타문의"];
+const companyEmail = "roseeb2017@naver.com";
+const formSubmitEndpoint = `https://formsubmit.co/ajax/${companyEmail}`;
+const consultationTypes = ["제품구입", "제품상담", "B2B", "입점/제휴", "기타문의"];
+
+function getFormValue(formData: FormData, key: string) {
+  return String(formData.get(key) || "").trim();
+}
 
 export default function ContactPage() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -23,21 +29,53 @@ export default function ContactPage() {
       return;
     }
 
-    const response = await fetch("/api/contact", {
-      body: JSON.stringify(Object.fromEntries(formData)),
-      headers: { "Content-Type": "application/json" },
-      method: "POST",
-    });
+    const inquiry = {
+      category: getFormValue(formData, "category") || "기타문의",
+      company: getFormValue(formData, "company") || "-",
+      content: getFormValue(formData, "content"),
+      email: getFormValue(formData, "email"),
+      name: getFormValue(formData, "name"),
+      phone: getFormValue(formData, "phone"),
+      position: getFormValue(formData, "position") || "-",
+    };
 
-    const result = await response.json();
+    const payload = {
+      _captcha: "false",
+      _honey: "",
+      _replyto: inquiry.email,
+      _subject: `${inquiry.name}님의 상담문의가 접수되었습니다 - 홈페이지 웹발송`,
+      _template: "table",
+      email: inquiry.email,
+      "개인정보 수집 및 이용": "동의함",
+      "받는 메일": companyEmail,
+      "상담내용": inquiry.content,
+      "상담항목": inquiry.category,
+      "성함(담당자)": inquiry.name,
+      "연락처": inquiry.phone,
+      "이메일 주소": inquiry.email,
+      "부서명/직함": inquiry.position,
+      "회사명": inquiry.company,
+    };
 
-    if (response.ok) {
+    try {
+      const response = await fetch(formSubmitEndpoint, {
+        body: new URLSearchParams(payload),
+        headers: {
+          Accept: "application/json",
+        },
+        method: "POST",
+      });
+
+      if (!response.ok) {
+        throw new Error("contact-submit-failed");
+      }
+
       setStatus("sent");
-      setMessage(result.message || "메시지를 보내주셔서 감사합니다. 발송이 완료되었습니다.");
+      setMessage("문의가 접수되었습니다. 담당자가 확인 후 연락드리겠습니다.");
       form.reset();
-    } else {
+    } catch {
       setStatus("error");
-      setMessage(result.message || "전송 중 문제가 발생했습니다. 잠시 후 다시 시도해 주세요.");
+      setMessage(`전송 중 문제가 발생했습니다. ${companyEmail}으로 직접 문의해 주세요.`);
     }
   }
 
@@ -60,7 +98,7 @@ export default function ContactPage() {
               <input name="company" />
             </label>
             <label>
-              <span>직함</span>
+              <span>부서명/직함</span>
               <input name="position" />
             </label>
             <label>

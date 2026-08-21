@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { products } from "../../catalog-data";
 import { formatPrice, isWonPrice } from "../../price-format";
+import { ProperNounText } from "../../proper-noun-text";
 import { BackToProductsButton } from "./back-to-products-button";
 
 type ProductDetailPageProps = {
@@ -104,20 +105,36 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
           <img src={product.image} alt={`${product.name} 제품 이미지`} />
         </div>
         <div className="product-detail-info">
-          <span>{product.brandName}</span>
-          <h1 style={{ "--title-length": product.name.length } as CSSProperties}>{product.name}</h1>
-          <strong>{formatPrice(product.price)}</strong>
+          <span>
+            <ProperNounText>{product.brandName}</ProperNounText>
+          </span>
+          <h1 style={{ "--title-length": product.name.length } as CSSProperties}>
+            <ProperNounText>{product.name}</ProperNounText>
+          </h1>
+          <strong className="notranslate" translate="no">
+            {formatPrice(product.price)}
+          </strong>
           {isWonPrice(product.price) ? <p className="product-price-note">소비자 가격은 원화(KRW) 기준입니다.</p> : null}
-          <p>{product.summary}</p>
+          <p>
+            <ProperNounText>{product.summary}</ProperNounText>
+          </p>
           {detailCopy.paragraphs.map((paragraph, index) => (
-            <p key={`${product.slug}-description-${index}`}>{paragraph}</p>
+            <p key={`${product.slug}-description-${index}`}>
+              <ProperNounText>{paragraph}</ProperNounText>
+            </p>
           ))}
-          {detailCopy.metaLine ? <p className="product-detail-meta">{detailCopy.metaLine}</p> : null}
+          {detailCopy.metaLine ? (
+            <p className="product-detail-meta">
+              <ProperNounText>{detailCopy.metaLine}</ProperNounText>
+            </p>
+          ) : null}
 
           <div className="detail-lines">
             <div className="detail-line-panel">
               <h2>제품정보</h2>
-              <p>브랜드: {product.brandName}</p>
+              <p>
+                브랜드: <ProperNounText>{product.brandName}</ProperNounText>
+              </p>
               <p>제품타입: {product.typeName}</p>
             </div>
           </div>

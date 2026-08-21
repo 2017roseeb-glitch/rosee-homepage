@@ -45,6 +45,21 @@ const languages = [
   { code: "uz", label: "O‘zbek" },
 ];
 
+function isSupportedLanguage(languageCode: string | null): languageCode is string {
+  return Boolean(languageCode && languages.some((language) => language.code === languageCode));
+}
+
+function getCookieLanguage() {
+  const match = document.cookie.match(/(?:^|;\s*)googtrans=\/ko\/([^;]+)/);
+  const languageCode = match ? decodeURIComponent(match[1]) : null;
+
+  return isSupportedLanguage(languageCode) ? languageCode : null;
+}
+
+function setPageLanguage(languageCode: string) {
+  document.documentElement.dataset.roseeLanguage = languageCode;
+}
+
 function setTranslateCookie(languageCode: string) {
   const value = languageCode === "ko" ? "" : `/ko/${languageCode}`;
   const maxAge = languageCode === "ko" ? "0" : String(60 * 60 * 24 * 365);
@@ -57,9 +72,12 @@ export default function LanguageSelector() {
 
   useEffect(() => {
     const savedLanguage = window.localStorage.getItem(storageKey);
-    if (savedLanguage && languages.some((language) => language.code === savedLanguage)) {
-      setActiveLanguage(savedLanguage);
-    }
+    const initialLanguage = isSupportedLanguage(savedLanguage) ? savedLanguage : (getCookieLanguage() ?? "ko");
+
+    const activeLanguageTimer = window.setTimeout(() => {
+      setActiveLanguage(initialLanguage);
+    }, 0);
+    setPageLanguage(initialLanguage);
 
     window.googleTranslateElementInit = () => {
       if (!window.google?.translate?.TranslateElement) {
@@ -85,10 +103,15 @@ export default function LanguageSelector() {
     } else {
       window.googleTranslateElementInit();
     }
+
+    return () => {
+      window.clearTimeout(activeLanguageTimer);
+    };
   }, []);
 
   function selectLanguage(languageCode: string) {
     setActiveLanguage(languageCode);
+    setPageLanguage(languageCode);
 
     if (languageCode === "ko") {
       window.localStorage.removeItem(storageKey);
@@ -111,19 +134,22 @@ export default function LanguageSelector() {
   const activeLabel = languages.find((language) => language.code === activeLanguage)?.label ?? "Language";
 
   return (
-    <div className="language-selector">
+    <div className="language-selector notranslate" translate="no">
       <div id="google_translate_element" aria-hidden="true" />
-      <button className="language-button" type="button" aria-haspopup="true">
+      <button className="language-button notranslate" type="button" aria-haspopup="true" translate="no">
         <span aria-hidden="true">🌐</span>
-        <span>{activeLanguage === "ko" ? "Language" : activeLabel}</span>
+        <span className="notranslate" translate="no">
+          {activeLanguage === "ko" ? "Language" : activeLabel}
+        </span>
       </button>
-      <div className="language-menu">
+      <div className="language-menu notranslate" translate="no">
         {languages.map((language) => (
           <button
             className={language.code === activeLanguage ? "is-active" : undefined}
             key={language.code}
             onClick={() => selectLanguage(language.code)}
             type="button"
+            translate="no"
           >
             {language.label}
           </button>

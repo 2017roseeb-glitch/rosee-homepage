@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Noto_Sans_KR } from "next/font/google";
 import { brandLines, productTypes } from "./catalog-data";
 import LanguageSelector from "./language-selector";
+import { ProperNounText } from "./proper-noun-text";
 import ScrollTopButton from "./scroll-top-button";
 import SiteNav from "./site-nav";
 import "./globals.css";
@@ -85,7 +86,9 @@ export default function RootLayout({
         <main>{children}</main>
         <footer className="site-footer">
           <div>
-            <strong>로제화장품(주)</strong>
+            <strong>
+              <ProperNounText>로제화장품(주)</ProperNounText>
+            </strong>
             <p>경기도 포천시 소흘읍 죽엽산로 385-89</p>
             <p>© Copyright (c) 2026 ROSEE Cosmetics All rights reserved.</p>
           </div>

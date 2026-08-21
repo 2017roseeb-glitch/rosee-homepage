@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ProperNounText } from "./proper-noun-text";
 
 type Menu = {
   href: string;
@@ -29,7 +30,7 @@ export default function SiteNav({ menus }: { menus: Menu[] }) {
                 {menu.items.map(([label, href]) => (
                   <li key={label}>
                     <Link href={href} onClick={closeDropdown}>
-                      {label}
+                      <ProperNounText>{label}</ProperNounText>
                     </Link>
                   </li>
                 ))}

@@ -1,5 +1,7 @@
 import { brandLines } from "../catalog-data";
+import { ProductCardName } from "../product-card-name";
 import { formatPrice } from "../price-format";
+import { ProperNounText } from "../proper-noun-text";
 import Link from "next/link";
 
 function isBidanmoProduct(slug: string) {
@@ -19,8 +21,12 @@ export default function BrandsPage() {
           {brandLines.map((brand) => (
             <section className="brand-product-section" id={brand.id} key={brand.id}>
               <div className="product-section-heading">
-                <h2>{brand.name}</h2>
-                <p>{brand.summary}</p>
+                <h2>
+                  <ProperNounText>{brand.name}</ProperNounText>
+                </h2>
+                <p>
+                  <ProperNounText>{brand.summary}</ProperNounText>
+                </p>
               </div>
               <div className="shop-product-grid">
                 {brand.products.map((product) => (
@@ -32,8 +38,12 @@ export default function BrandsPage() {
                     <div className="shop-product-image">
                       <img src={product.image} alt={`${product.name} 제품 이미지`} />
                     </div>
-                    <strong>{product.name}</strong>
-                    <span>{formatPrice(product.price)}</span>
+                    <strong>
+                      <ProductCardName name={product.name} />
+                    </strong>
+                    <span className="notranslate" translate="no">
+                      {formatPrice(product.price)}
+                    </span>
                   </Link>
                 ))}
               </div>
@@ -44,7 +54,7 @@ export default function BrandsPage() {
       <nav className="brand-glass-bar" aria-label="브랜드 바로가기">
         {brandLines.map((brand) => (
           <a href={`#${brand.id}`} key={brand.id}>
-            {brand.name}
+            <ProperNounText>{brand.name}</ProperNounText>
           </a>
         ))}
       </nav>

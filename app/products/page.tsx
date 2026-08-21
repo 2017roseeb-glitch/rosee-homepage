@@ -1,6 +1,8 @@
 import { brandLines } from "../catalog-data";
+import { ProductCardName } from "../product-card-name";
 import { formatPrice } from "../price-format";
 import { ProductListLink, ProductScrollRestorer } from "../product-scroll-state";
+import { ProperNounText } from "../proper-noun-text";
 
 function productThumbnail(slug: string) {
   return `/assets/product-thumbs/${slug}.png`;
@@ -48,7 +50,7 @@ export default function ProductsPage() {
         <nav className="product-category-list" aria-label="브랜드별 제품 바로가기">
           {productSections.map((brand) => (
             <a href={`#${brand.id}`} key={brand.id}>
-              {brand.name}
+              <ProperNounText>{brand.name}</ProperNounText>
             </a>
           ))}
         </nav>
@@ -56,8 +58,12 @@ export default function ProductsPage() {
           {productSections.map((brand) => (
             <section className="brand-product-section" id={brand.id} key={brand.id}>
               <div className="product-section-heading">
-                <h2>{brand.name}</h2>
-                <p>{brand.summary}</p>
+                <h2>
+                  <ProperNounText>{brand.name}</ProperNounText>
+                </h2>
+                <p>
+                  <ProperNounText>{brand.summary}</ProperNounText>
+                </p>
               </div>
               <div className="shop-product-grid">
                 {brand.products.map((product) => (
@@ -69,8 +75,12 @@ export default function ProductsPage() {
                     <div className="shop-product-image">
                       <img src={productThumbnail(product.slug)} alt={`${product.name} 제품 이미지`} />
                     </div>
-                    <strong>{product.name}</strong>
-                    <span>{formatPrice(product.price)}</span>
+                    <strong>
+                      <ProductCardName name={product.name} />
+                    </strong>
+                    <span className="notranslate" translate="no">
+                      {formatPrice(product.price)}
+                    </span>
                   </ProductListLink>
                 ))}
               </div>
@@ -81,7 +91,7 @@ export default function ProductsPage() {
       <nav className="brand-glass-bar" aria-label="브랜드 바로가기">
         {productSections.map((brand) => (
           <a href={`#${brand.id}`} key={brand.id}>
-            {brand.name}
+            <ProperNounText>{brand.name}</ProperNounText>
           </a>
         ))}
       </nav>

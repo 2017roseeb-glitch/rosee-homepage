@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { ProperNounText } from "./proper-noun-text";
 
 const brandSlides = [
   {
@@ -86,15 +87,19 @@ export default function Home() {
                 onMouseEnter={() => setActiveBrand(index)}
                 type="button"
               >
-                {brand.name}
+                <ProperNounText>{brand.name}</ProperNounText>
               </button>
             ))}
           </div>
         </div>
         <div className="brand-hero-copy">
           <span className="eyebrow">ROSEE COSMETICS</span>
-          <h1>{brandSlides[activeBrand].name}</h1>
-          <p>{brandSlides[activeBrand].summary}</p>
+          <h1>
+            <ProperNounText>{brandSlides[activeBrand].name}</ProperNounText>
+          </h1>
+          <p>
+            <ProperNounText>{brandSlides[activeBrand].summary}</ProperNounText>
+          </p>
           <div className="hero-actions">
             <Link className="button primary" href="/brands">
               브랜드 보기
