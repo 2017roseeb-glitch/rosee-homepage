@@ -3480,6 +3480,74 @@ body:has(.brand-glass-bar) .scroll-top-button {
   background: #fff;
 }
 
+.email-contact-panel {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 760px;
+  min-height: clamp(300px, 34vw, 420px);
+  padding: clamp(28px, 4.5vw, 58px) 0;
+  text-align: center;
+}
+
+.email-contact-panel h2 {
+  color: #15171d;
+  font-size: clamp(32px, 4.2vw, 52px);
+  line-height: 1.08;
+  margin: 12px 0 0;
+}
+
+.email-contact-divider {
+  background: #d9d9d9;
+  display: block;
+  height: 1px;
+  margin: 22px 0;
+  max-width: 520px;
+  width: min(100%, 520px);
+}
+
+.email-contact-panel p {
+  color: #666;
+  font-size: clamp(17px, 1.7vw, 22px);
+  font-weight: 700;
+  line-height: 1.75;
+  margin: 0;
+  max-width: 720px;
+}
+
+.email-contact-address {
+  color: var(--rose);
+  display: flex;
+  font-size: clamp(24px, 3.2vw, 40px);
+  font-weight: 900;
+  justify-content: center;
+  line-height: 1.2;
+  margin: 18px 0 16px;
+  user-select: text;
+  width: 100%;
+  word-break: break-all;
+}
+
+.email-copy-button {
+  display: inline-flex;
+  font-size: clamp(15px, 1.2vw, 18px);
+  justify-content: center;
+  margin: 0;
+  min-width: min(260px, 100%);
+}
+
+.email-copy-message {
+  color: var(--rose) !important;
+  font-size: 16px !important;
+  margin-top: 14px !important;
+}
+
+.email-contact-note {
+  color: #444 !important;
+  margin-top: 24px !important;
+}
+
 .web-contact-form {
   margin: 0 auto;
   max-width: 1280px;
