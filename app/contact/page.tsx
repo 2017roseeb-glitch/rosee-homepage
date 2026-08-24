@@ -43,7 +43,7 @@ export default function ContactPage() {
       _captcha: "false",
       _honey: "",
       _replyto: inquiry.email,
-      _subject: `${inquiry.name}님의 상담문의가 접수되었습니다 - 홈페이지 웹발송`,
+      _subject: "[로제화장품 홈페이지] 새로운 상담문의가 접수되었습니다",
       _template: "table",
       email: inquiry.email,
       "개인정보 수집 및 이용": "동의함",

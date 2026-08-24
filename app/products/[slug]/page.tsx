@@ -12,11 +12,6 @@ type ProductDetailPageProps = {
   }>;
 };
 
-const brandHomepageLinks: Record<string, string> = {
-  "sibjangsaeng": "https://www.sibjangsaeng.kr/",
-  "eco-aloe": "https://www.ecoaloe.co.kr/",
-};
-
 type ProductDetailCopy = {
   paragraphs: string[];
   metaLine: string | null;
@@ -95,7 +90,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
     notFound();
   }
 
-  const brandHomepageUrl = brandHomepageLinks[product.brandId];
+  const brandPageHref = `/brands#${product.brandId}`;
   const detailCopy = createProductDetailCopy(product.description, product.summary);
 
   return (
@@ -111,10 +106,6 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
           <h1 style={{ "--title-length": product.name.length } as CSSProperties}>
             <ProperNounText>{product.name}</ProperNounText>
           </h1>
-          <strong className="notranslate" translate="no">
-            {formatPrice(product.price)}
-          </strong>
-          {isWonPrice(product.price) ? <p className="product-price-note">소비자 가격은 원화(KRW) 기준입니다.</p> : null}
           <p>
             <ProperNounText>{product.summary}</ProperNounText>
           </p>
@@ -123,15 +114,24 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
               <ProperNounText>{paragraph}</ProperNounText>
             </p>
           ))}
-          {detailCopy.metaLine ? (
-            <p className="product-detail-meta">
-              <ProperNounText>{detailCopy.metaLine}</ProperNounText>
-            </p>
-          ) : null}
 
           <div className="detail-lines">
             <div className="detail-line-panel">
               <h2>제품정보</h2>
+              {detailCopy.metaLine ? (
+                <p>
+                  <ProperNounText>{detailCopy.metaLine}</ProperNounText>
+                </p>
+              ) : null}
+              <p>
+                가격:{" "}
+                <span className="notranslate" translate="no">
+                  {formatPrice(product.price)}
+                </span>
+                {isWonPrice(product.price) ? (
+                  <span className="detail-line-price-note">소비자 가격은 원화(KRW) 기준입니다.</span>
+                ) : null}
+              </p>
               <p>
                 브랜드: <ProperNounText>{product.brandName}</ProperNounText>
               </p>
@@ -147,11 +147,9 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
             <a className="button outline" href="https://roseeshop.com/" target="_blank" rel="noreferrer">
               공식몰 이동
             </a>
-            {brandHomepageUrl ? (
-              <a className="button outline" href={brandHomepageUrl} target="_blank" rel="noreferrer">
-                브랜드홈페이지 이동
-              </a>
-            ) : null}
+            <Link className="button outline" href={brandPageHref}>
+              브랜드페이지 이동
+            </Link>
           </div>
         </div>
       </section>

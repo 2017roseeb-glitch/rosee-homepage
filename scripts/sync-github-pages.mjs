@@ -18,6 +18,8 @@ const publishPaths = [
   "recruit",
   "404.html",
   "favicon.svg",
+  "favicon.png",
+  "apple-touch-icon.png",
   "index.html",
 ];
 
@@ -49,7 +51,11 @@ async function rewriteAssetPaths(target) {
     .replaceAll("'/assets/", `'${githubPagesBasePath}/assets/`)
     .replaceAll("(/assets/", `(${githubPagesBasePath}/assets/`)
     .replaceAll('"/favicon.svg', `"${githubPagesBasePath}/favicon.svg`)
-    .replaceAll("'/favicon.svg", `'${githubPagesBasePath}/favicon.svg`);
+    .replaceAll("'/favicon.svg", `'${githubPagesBasePath}/favicon.svg`)
+    .replaceAll('"/favicon.png', `"${githubPagesBasePath}/favicon.png`)
+    .replaceAll("'/favicon.png", `'${githubPagesBasePath}/favicon.png`)
+    .replaceAll('"/apple-touch-icon.png', `"${githubPagesBasePath}/apple-touch-icon.png`)
+    .replaceAll("'/apple-touch-icon.png", `'${githubPagesBasePath}/apple-touch-icon.png`);
 
   if (rewritten !== original) {
     await writeFile(target, rewritten);

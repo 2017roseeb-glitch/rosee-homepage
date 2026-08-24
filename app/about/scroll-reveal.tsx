@@ -8,15 +8,19 @@ export default function AboutScrollReveal() {
     const scrollScenes = Array.from(document.querySelectorAll<HTMLElement>(".scroll-scene"));
 
     const updateScenes = () => {
+      const isCompactViewport = window.matchMedia("(max-width: 920px)").matches;
+      const sceneShift = isCompactViewport ? 0 : 72;
+      const trackTravel = isCompactViewport ? 0 : -34;
+
       scrollScenes.forEach((scene) => {
         const rect = scene.getBoundingClientRect();
         const travel = window.innerHeight + rect.height;
         const progress = Math.min(1, Math.max(0, (window.innerHeight - rect.top) / travel));
         scene.style.setProperty("--scene-progress", progress.toFixed(4));
-        scene.style.setProperty("--scene-shift-x", `${(progress - 0.5) * 72}px`);
-        scene.style.setProperty("--scene-shift-y", `${(0.5 - progress) * 72}px`);
-        scene.style.setProperty("--scene-track-x", `${progress * -34}%`);
-        scene.style.setProperty("--scene-scale", `${0.96 + progress * 0.08}`);
+        scene.style.setProperty("--scene-shift-x", `${(progress - 0.5) * sceneShift}px`);
+        scene.style.setProperty("--scene-shift-y", `${(0.5 - progress) * sceneShift}px`);
+        scene.style.setProperty("--scene-track-x", `${progress * trackTravel}%`);
+        scene.style.setProperty("--scene-scale", `${isCompactViewport ? 1 : 0.98 + progress * 0.08}`);
       });
     };
 

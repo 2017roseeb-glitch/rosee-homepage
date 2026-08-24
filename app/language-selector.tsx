@@ -25,6 +25,7 @@ declare global {
       };
     };
     googleTranslateElementInit?: () => void;
+    roseeTranslateDomGuardInstalled?: boolean;
   }
 }
 
@@ -67,10 +68,39 @@ function setTranslateCookie(languageCode: string) {
   document.cookie = `googtrans=${value}; path=/rosee-homepage; max-age=${maxAge}; SameSite=Lax`;
 }
 
+function installTranslateDomGuard() {
+  if (window.roseeTranslateDomGuardInstalled) {
+    return;
+  }
+
+  window.roseeTranslateDomGuardInstalled = true;
+
+  const originalRemoveChild = Node.prototype.removeChild;
+  const originalInsertBefore = Node.prototype.insertBefore;
+
+  Node.prototype.removeChild = function removeChild(this: Node, child: Node) {
+    if (child.parentNode !== this) {
+      return child;
+    }
+
+    return originalRemoveChild.call(this, child);
+  } as typeof Node.prototype.removeChild;
+
+  Node.prototype.insertBefore = function insertBefore(this: Node, newNode: Node, referenceNode: Node | null) {
+    if (referenceNode && referenceNode.parentNode !== this) {
+      return originalInsertBefore.call(this, newNode, null);
+    }
+
+    return originalInsertBefore.call(this, newNode, referenceNode);
+  } as typeof Node.prototype.insertBefore;
+}
+
 export default function LanguageSelector() {
   const [activeLanguage, setActiveLanguage] = useState("ko");
 
   useEffect(() => {
+    installTranslateDomGuard();
+
     const savedLanguage = window.localStorage.getItem(storageKey);
     const initialLanguage = isSupportedLanguage(savedLanguage) ? savedLanguage : (getCookieLanguage() ?? "ko");
 
@@ -138,7 +168,7 @@ export default function LanguageSelector() {
       <div id="google_translate_element" aria-hidden="true" />
       <button className="language-button notranslate" type="button" aria-haspopup="true" translate="no">
         <span aria-hidden="true">🌐</span>
-        <span className="notranslate" translate="no">
+        <span className="language-button-label notranslate" translate="no">
           {activeLanguage === "ko" ? "Language" : activeLabel}
         </span>
       </button>

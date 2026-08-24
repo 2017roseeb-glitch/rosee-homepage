@@ -18,8 +18,9 @@ export const metadata: Metadata = {
   title: "로제화장품 | ROSEE Cosmetics",
   description: "로제화장품 공식 회사 홈페이지",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -77,7 +78,26 @@ export default function RootLayout({
           </Link>
           <SiteNav menus={menus} />
           <div className="header-actions">
-            <a className="shop-link" href="https://roseeshop.com/" target="_blank" rel="noreferrer">
+            <a
+              aria-label="로제화장품 공식 인스타그램"
+              className="instagram-link"
+              href="https://www.instagram.com/rosee_cosmetic/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1.2" />
+              </svg>
+            </a>
+            <a
+              className="shop-link notranslate"
+              href="https://roseeshop.com/"
+              target="_blank"
+              rel="noreferrer"
+              translate="no"
+            >
               공식몰
             </a>
             <LanguageSelector />
