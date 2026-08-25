@@ -9,6 +9,7 @@ const brandSlides = [
     name: "십장생",
     href: "/products#sibjangsaeng",
     image: "/assets/sibjangsaeng-model-banner.jpg",
+    desktopFocus: "64% 18%",
     mobileFocus: "72% center",
     summary: "전통의 깊이를 담은 로제의 대표 한방 스킨케어",
   },
@@ -85,7 +86,12 @@ export default function Home() {
               src={brand.image}
               alt=""
               key={brand.name}
-              style={{ "--mobile-focus": brand.mobileFocus } as CSSProperties}
+              style={
+                {
+                  "--desktop-focus": "desktopFocus" in brand ? brand.desktopFocus : "center",
+                  "--mobile-focus": brand.mobileFocus,
+                } as CSSProperties
+              }
             />
           ))}
         </div>

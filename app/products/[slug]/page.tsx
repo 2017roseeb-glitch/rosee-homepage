@@ -92,6 +92,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
   const brandPageHref = `/brands#${product.brandId}`;
   const detailCopy = createProductDetailCopy(product.description, product.summary);
+  const colorOptions = "colorOptions" in product ? product.colorOptions : null;
 
   return (
     <>
@@ -136,6 +137,26 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                 브랜드: <ProperNounText>{product.brandName}</ProperNounText>
               </p>
               <p>제품타입: {product.typeName}</p>
+              {colorOptions ? (
+                <div className="product-color-options">
+                  <h3>타입별 색상</h3>
+                  <p className="product-color-options-title">&lt;{colorOptions.title}&gt;</p>
+                  <ul>
+                    {colorOptions.items.map((item) => (
+                      <li key={item.code}>
+                        <span
+                          aria-hidden="true"
+                          className="product-color-swatch"
+                          style={{ backgroundColor: item.color }}
+                        />
+                        <span>
+                          <strong>{item.code}</strong> {item.name}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
             </div>
           </div>
 

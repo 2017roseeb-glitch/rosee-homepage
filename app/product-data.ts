@@ -693,7 +693,16 @@ export const products = [
     "price": "11,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-gray-cover-color.png",
     "summary": "새치 커버를 위한 크림 타입 헤어 컬러 제품으로 자연스러운 색상 연출을 도와줍니다.",
-    "description": "새치 커버를 위해 사용하는 크림 타입 헤어 컬러 제품입니다. 알로에 성분과 식물 유래 케어 성분을 담아 컬러링 중에도 모발을 부드럽게 감싸며 자연스럽고 깔끔한 색상 표현을 도와줍니다.\n\n용량 및 구성: 60ml\n소비자가: 11,000원"
+    "description": "새치 커버를 위해 사용하는 크림 타입 헤어 컬러 제품입니다. 알로에 성분과 식물 유래 케어 성분을 담아 컬러링 중에도 모발을 부드럽게 감싸며 자연스럽고 깔끔한 색상 표현을 도와줍니다.\n\n용량 및 구성: 60ml\n소비자가: 11,000원",
+    "colorOptions": {
+      "title": "새치머리용",
+      "items": [
+        { "code": "N1", "name": "흑색", "color": "#080000" },
+        { "code": "N3", "name": "흑갈색", "color": "#1f1c12" },
+        { "code": "N5", "name": "진한갈색", "color": "#3d2a10" },
+        { "code": "N6", "name": "자연갈색", "color": "#4a2618" }
+      ]
+    }
   },
   {
     "slug": "eco-aloe-fashion-color",
@@ -705,7 +714,15 @@ export const products = [
     "price": "11,000원",
     "image": "/assets/products/brand-homepage/eco-aloe-fashion-color.png",
     "summary": "원하는 분위기에 맞춰 헤어 컬러를 연출할 수 있는 크림 타입 멋내기용 컬러 제품입니다.",
-    "description": "멋내기 컬러 연출을 위한 크림 타입 헤어 컬러 제품입니다. 알로에 성분과 식물 유래 케어 성분을 담아 모발을 부드럽게 감싸며 선명하고 자연스러운 색상 표현을 도와줍니다.\n\n용량 및 구성: 60ml\n소비자가: 11,000원"
+    "description": "멋내기 컬러 연출을 위한 크림 타입 헤어 컬러 제품입니다. 알로에 성분과 식물 유래 케어 성분을 담아 모발을 부드럽게 감싸며 선명하고 자연스러운 색상 표현을 도와줍니다.\n\n용량 및 구성: 60ml\n소비자가: 11,000원",
+    "colorOptions": {
+      "title": "새치머리+멋내기",
+      "items": [
+        { "code": "C6", "name": "밝은 자연갈색", "color": "#74462b" },
+        { "code": "C7", "name": "구리빛밝은갈색", "color": "#6d2b17" },
+        { "code": "C8", "name": "밝은 황갈색", "color": "#a36c31" }
+      ]
+    }
   },
   {
     "slug": "eco-aloe-curling-essence",
