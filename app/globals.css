@@ -301,119 +301,6 @@ body {
   white-space: nowrap;
 }
 
-html[data-rosee-language]:not([data-rosee-language="ko"]) .site-header,
-html.translated-ltr .site-header,
-html.translated-rtl .site-header {
-  grid-template-columns: minmax(118px, 1fr) auto auto;
-}
-
-html[data-rosee-language]:not([data-rosee-language="ko"]) .site-nav,
-html.translated-ltr .site-nav,
-html.translated-rtl .site-nav {
-  grid-column: 2;
-  left: auto;
-  position: static;
-  justify-self: end;
-  top: auto;
-  transform: none;
-}
-
-html[data-rosee-language]:not([data-rosee-language="ko"]) .menu-toggle,
-html.translated-ltr .menu-toggle,
-html.translated-rtl .menu-toggle {
-  display: inline-flex;
-  flex: 0 0 42px;
-  height: 42px;
-  width: 42px;
-}
-
-html[data-rosee-language]:not([data-rosee-language="ko"]) .site-nav-list,
-html.translated-ltr .site-nav-list,
-html.translated-rtl .site-nav-list {
-  background: rgba(255, 255, 255, 0.98);
-  border-top: 1px solid var(--line);
-  box-shadow: 0 22px 58px rgba(0, 0, 0, 0.12);
-  display: none;
-  font-size: 16px;
-  font-weight: 800;
-  gap: 0;
-  grid-template-columns: 1fr;
-  left: 0;
-  max-height: calc(100dvh - var(--header-height));
-  overflow-y: auto;
-  padding: 16px clamp(20px, 6vw, 44px) 22px;
-  position: fixed;
-  right: 0;
-  top: var(--header-height);
-  z-index: 24;
-}
-
-html[data-rosee-language]:not([data-rosee-language="ko"]) .site-nav.is-open .site-nav-list,
-html.translated-ltr .site-nav.is-open .site-nav-list,
-html.translated-rtl .site-nav.is-open .site-nav-list {
-  display: grid;
-}
-
-html[data-rosee-language]:not([data-rosee-language="ko"]) .site-nav-list > .nav-item,
-html.translated-ltr .site-nav-list > .nav-item,
-html.translated-rtl .site-nav-list > .nav-item {
-  border-bottom: 1px solid #eeeeee;
-}
-
-html[data-rosee-language]:not([data-rosee-language="ko"]) .site-nav-list > .nav-item:last-child,
-html.translated-ltr .site-nav-list > .nav-item:last-child,
-html.translated-rtl .site-nav-list > .nav-item:last-child {
-  border-bottom: 0;
-}
-
-html[data-rosee-language]:not([data-rosee-language="ko"]) .site-nav-list > .nav-item > a,
-html.translated-ltr .site-nav-list > .nav-item > a,
-html.translated-rtl .site-nav-list > .nav-item > a {
-  font-size: 18px;
-  padding: 16px 0 10px;
-  white-space: normal;
-}
-
-html[data-rosee-language]:not([data-rosee-language="ko"]) .nav-dropdown,
-html.translated-ltr .nav-dropdown,
-html.translated-rtl .nav-dropdown {
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-  left: auto;
-  min-width: 0;
-  opacity: 1;
-  padding: 0 0 16px 14px;
-  pointer-events: auto;
-  position: static;
-  transform: none;
-  transition: none;
-}
-
-html[data-rosee-language]:not([data-rosee-language="ko"]) .nav-dropdown strong,
-html.translated-ltr .nav-dropdown strong,
-html.translated-rtl .nav-dropdown strong {
-  display: none;
-}
-
-html[data-rosee-language]:not([data-rosee-language="ko"]) .nav-dropdown ul,
-html.translated-ltr .nav-dropdown ul,
-html.translated-rtl .nav-dropdown ul {
-  gap: 10px;
-}
-
-html[data-rosee-language]:not([data-rosee-language="ko"]) .nav-dropdown a,
-html.translated-ltr .nav-dropdown a,
-html.translated-rtl .nav-dropdown a {
-  color: #666;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1.35;
-  padding: 0;
-  white-space: normal;
-}
-
 html[data-rosee-language]:not([data-rosee-language="ko"]) .header-actions,
 html.translated-ltr .header-actions,
 html.translated-rtl .header-actions {
@@ -438,6 +325,46 @@ html.translated-ltr .shop-link,
 html.translated-rtl .shop-link {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media (min-width: 921px) {
+  html[data-rosee-language]:not([data-rosee-language="ko"]) .site-header,
+  html.translated-ltr .site-header,
+  html.translated-rtl .site-header {
+    gap: clamp(10px, 1.35vw, 18px);
+    grid-template-columns: minmax(142px, 0.8fr) minmax(0, auto) minmax(224px, 0.8fr);
+  }
+
+  html[data-rosee-language]:not([data-rosee-language="ko"]) .site-nav-list,
+  html.translated-ltr .site-nav-list,
+  html.translated-rtl .site-nav-list {
+    font-size: clamp(12px, 0.78vw, 15px);
+    gap: clamp(12px, 1.55vw, 30px);
+  }
+
+  html[data-rosee-language]:not([data-rosee-language="ko"]) .site-nav-list > .nav-item > a,
+  html.translated-ltr .site-nav-list > .nav-item > a,
+  html.translated-rtl .site-nav-list > .nav-item > a {
+    padding: 16px 0;
+    white-space: nowrap;
+  }
+
+  html[data-rosee-language]:not([data-rosee-language="ko"]) .shop-link,
+  html.translated-ltr .shop-link,
+  html.translated-rtl .shop-link {
+    font-size: 13px;
+    max-width: 136px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  html[data-rosee-language]:not([data-rosee-language="ko"]) .language-button,
+  html.translated-ltr .language-button,
+  html.translated-rtl .language-button {
+    font-size: 13px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
 }
 
 .language-button:hover,
@@ -2081,6 +2008,7 @@ html[data-rosee-language]:not([data-rosee-language="ko"]) .proper-noun-latin {
   background: rgba(255, 255, 255, 0.62);
   border-right: 1px solid rgba(34, 35, 45, 0.1);
   box-shadow: 0 16px 54px rgba(32, 40, 48, 0.04);
+  min-width: 0;
   padding: clamp(30px, 4vw, 52px) clamp(20px, 3.4vw, 46px);
   text-align: center;
 }
@@ -2122,6 +2050,42 @@ html[data-rosee-language]:not([data-rosee-language="ko"]) .proper-noun-latin {
   font-size: clamp(15px, 1.18vw, 18px);
   font-weight: 700;
   line-height: 1.65;
+}
+
+html[data-rosee-language]:not([data-rosee-language="ko"]) .about-strategy-grid article,
+html.translated-ltr .about-strategy-grid article,
+html.translated-rtl .about-strategy-grid article,
+html[data-rosee-language]:not([data-rosee-language="ko"]) .about-value-cards article,
+html.translated-ltr .about-value-cards article,
+html.translated-rtl .about-value-cards article {
+  overflow-wrap: anywhere;
+}
+
+html[data-rosee-language]:not([data-rosee-language="ko"]) .about-strategy-grid h3,
+html.translated-ltr .about-strategy-grid h3,
+html.translated-rtl .about-strategy-grid h3 {
+  font-size: clamp(18px, 1.42vw, 25px);
+  line-height: 1.42;
+  max-width: 100%;
+}
+
+html[data-rosee-language]:not([data-rosee-language="ko"]) .about-strategy-grid h3 span,
+html.translated-ltr .about-strategy-grid h3 span,
+html.translated-rtl .about-strategy-grid h3 span {
+  hyphens: auto;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+html[data-rosee-language]:not([data-rosee-language="ko"]) .about-strategy-grid li,
+html.translated-ltr .about-strategy-grid li,
+html.translated-rtl .about-strategy-grid li,
+html[data-rosee-language]:not([data-rosee-language="ko"]) .about-value-cards p,
+html.translated-ltr .about-value-cards p,
+html.translated-rtl .about-value-cards p {
+  hyphens: auto;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .about-market-cinema {

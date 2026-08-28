@@ -24,6 +24,25 @@ export default function AboutScrollReveal() {
       });
     };
 
+    const revealVisibleItems = () => {
+      const revealLine = window.innerHeight * 0.94;
+
+      revealItems.forEach((item) => {
+        if (item.classList.contains("is-visible")) return;
+
+        const rect = item.getBoundingClientRect();
+
+        if (rect.top <= revealLine) {
+          item.classList.add("is-visible");
+        }
+      });
+    };
+
+    const update = () => {
+      updateScenes();
+      revealVisibleItems();
+    };
+
     if (!("IntersectionObserver" in window)) {
       revealItems.forEach((item) => item.classList.add("is-visible"));
       updateScenes();
@@ -40,20 +59,20 @@ export default function AboutScrollReveal() {
         });
       },
       {
-        rootMargin: "0px 0px -16% 0px",
-        threshold: 0.16,
+        rootMargin: "0px 0px -6% 0px",
+        threshold: 0.01,
       },
     );
 
     revealItems.forEach((item) => observer.observe(item));
-    updateScenes();
-    window.addEventListener("scroll", updateScenes, { passive: true });
-    window.addEventListener("resize", updateScenes);
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
 
     return () => {
       observer.disconnect();
-      window.removeEventListener("scroll", updateScenes);
-      window.removeEventListener("resize", updateScenes);
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
     };
   }, []);
 
