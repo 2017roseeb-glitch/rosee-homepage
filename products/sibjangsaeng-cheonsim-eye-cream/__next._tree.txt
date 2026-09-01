@@ -1,6 +1,6 @@
 :HL["/rosee-homepage/_next/static/chunks/11v34guy3s-~a.css","style"]
-:HL["/rosee-homepage/_next/static/chunks/04jll54srp-l2.css","style"]
+:HL["/rosee-homepage/_next/static/chunks/0ivv7c-7v83oa.css","style"]
 :HL["/rosee-homepage/_next/static/media/fca78c2ee6cec166-s.p.0kizb7t94.kuf.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/rosee-homepage/assets/company/rosee-wordmark.png","image"]
 :HL["/rosee-homepage/assets/products/brand-homepage/sibjangsaeng-cheonsim-eye-cream.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"sibjangsaeng-cheonsim-eye-cream","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"W5O49ShxNG6m3pk9kMOsk"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"sibjangsaeng-cheonsim-eye-cream","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"sPgv0RHfH3l8A-aYZIWO8"}

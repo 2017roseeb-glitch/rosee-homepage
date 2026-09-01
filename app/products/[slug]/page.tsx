@@ -90,12 +90,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
     notFound();
   }
 
-  const brandPageHref =
-    product.brandId === "eco-aloe"
-      ? "https://ecoaloe.co.kr/"
-      : product.brandId === "sibjangsaeng"
-        ? "https://sibjangsaeng.kr/"
-        : null;
+  const brandPageHref = `/brands#${product.brandId}`;
   const detailCopy = createProductDetailCopy(product.description, product.summary);
   const colorOptions = "colorOptions" in product ? product.colorOptions : null;
 
@@ -173,11 +168,9 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
             <a className="button outline" href="https://roseeshop.com/" target="_blank" rel="noreferrer">
               공식몰 이동
             </a>
-            {brandPageHref ? (
-              <a className="button outline" href={brandPageHref} target="_blank" rel="noreferrer">
-                브랜드페이지 이동
-              </a>
-            ) : null}
+            <Link className="button outline" href={brandPageHref}>
+              브랜드페이지 이동
+            </Link>
           </div>
         </div>
       </section>
