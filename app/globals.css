@@ -2870,6 +2870,10 @@ body:has(.brand-glass-bar) .scroll-top-button {
   margin: 0 0 16px;
 }
 
+.product-detail-info h1 + p {
+  margin-top: clamp(24px, 2.4vw, 36px);
+}
+
 .product-detail-info .product-price-note {
   color: #8a8a8a;
   font-size: 14px;
