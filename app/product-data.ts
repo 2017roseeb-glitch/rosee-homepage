@@ -792,7 +792,7 @@ export const products = [
     "typeName": "헤어&바디",
     "name": "에코 라임민트 바디 2종세트",
     "price": "38,000원",
-    "image": "/assets/products/brand-homepage/eco-lime-mint-body-set.png",
+    "image": "/assets/products/eco-lime-mint-body-set.png",
     "summary": "라임과 민트의 산뜻한 이미지를 담아 클렌징과 보습을 함께 구성한 바디 케어 2종 세트입니다.",
     "description": "상쾌한 라임과 민트의 이미지를 담아 바디 클렌징과 보습 케어를 함께 제안하는 바디 2종 세트입니다. 샤워 단계부터 마무리 보습까지 산뜻하고 깨끗한 데일리 바디 케어 루틴을 완성해줍니다.\n\n용량 및 구성: 세트구성\n소비자가: 38,000원"
   },

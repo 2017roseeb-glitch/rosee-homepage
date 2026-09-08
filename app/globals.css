@@ -2808,22 +2808,34 @@ body:has(.brand-glass-bar) .scroll-top-button {
   padding: calc(var(--header-height) + 32px) clamp(22px, 7vw, 120px) 160px;
 }
 
+.product-detail-media {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
 .product-detail-image {
   background: #fff;
   border: 0;
   box-shadow: none;
   display: grid;
-  min-height: 560px;
+  height: clamp(440px, 52vh, 620px);
+  min-height: 0;
   overflow: hidden;
-  padding: clamp(34px, 5vw, 74px);
+  padding: clamp(24px, 4vw, 56px);
   place-items: center;
+  width: 100%;
 }
 
 .product-detail-image img {
+  display: block;
   height: 100%;
-  max-height: 620px;
-  max-width: 100%;
+  min-height: 0;
+  min-width: 0;
   object-fit: contain;
+  transform: scale(var(--product-image-scale, 1));
   width: 100%;
 }
 
@@ -2978,6 +2990,17 @@ body:has(.brand-glass-bar) .scroll-top-button {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 30px;
+}
+
+.product-detail-pager {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.product-detail-pager .button {
+  min-width: 132px;
 }
 
 .button.outline {
@@ -4796,7 +4819,8 @@ body:has(.brand-glass-bar) .scroll-top-button {
     background: #fff;
     border: 0;
     box-shadow: none;
-    min-height: 420px;
+    height: clamp(340px, 48vh, 460px);
+    min-height: 0;
   }
 
   .recruit-page {
@@ -5057,7 +5081,8 @@ body:has(.brand-glass-bar) .scroll-top-button {
     background: #fff;
     border: 0;
     box-shadow: none;
-    min-height: 320px;
+    height: clamp(280px, 46vh, 340px);
+    min-height: 0;
   }
 
   .product-detail-page {
@@ -5084,6 +5109,15 @@ body:has(.brand-glass-bar) .scroll-top-button {
   .product-detail-actions button {
     justify-content: center;
     width: 100%;
+  }
+
+  .product-detail-pager {
+    width: 100%;
+  }
+
+  .product-detail-pager .button {
+    flex: 1 1 0;
+    min-width: 0;
   }
 
   .scroll-top-button {

@@ -84,21 +84,36 @@ export function generateStaticParams() {
 
 export default async function ProductDetailPage({ params }: ProductDetailPageProps) {
   const { slug } = await params;
-  const product = products.find((item) => item.slug === slug);
+  const productIndex = products.findIndex((item) => item.slug === slug);
 
-  if (!product) {
+  if (productIndex === -1) {
     notFound();
   }
 
+  const product = products[productIndex];
+  const previousProduct = products[(productIndex - 1 + products.length) % products.length];
+  const nextProduct = products[(productIndex + 1) % products.length];
   const brandPageHref = `/brands#${product.brandId}`;
   const detailCopy = createProductDetailCopy(product.description, product.summary);
   const colorOptions = "colorOptions" in product ? product.colorOptions : null;
+  const hasPaddedProductImage = product.slug.startsWith("sibjangsaeng-kuman-");
+  const productImageScale = product.slug === "sibjangsaeng-kuman-emulsion" ? 1.7 : hasPaddedProductImage ? 1.35 : 1;
 
   return (
     <>
       <section className="product-detail-page">
-        <div className="product-detail-image">
-          <img src={product.image} alt={`${product.name} 제품 이미지`} />
+        <div className="product-detail-media">
+          <div className="product-detail-image" style={{ "--product-image-scale": productImageScale } as CSSProperties}>
+            <img src={product.image} alt={`${product.name} 제품 이미지`} />
+          </div>
+          <nav className="product-detail-pager" aria-label="제품 상세 이동">
+            <Link className="button outline" href={`/products/${previousProduct.slug}`}>
+              이전 제품
+            </Link>
+            <Link className="button dark" href={`/products/${nextProduct.slug}`}>
+              다음 제품
+            </Link>
+          </nav>
         </div>
         <div className="product-detail-info">
           <span>
